@@ -1,0 +1,99 @@
+﻿@using TalkgroupService
+@using TowerTalkgroupService
+
+@model TalkgroupDetailViewModel
+
+@(Html.Kendo().Grid<TalkgroupTowerViewModel>()
+    .Name("TowersGrid")
+    .Columns(column =>
+    {
+        column.Bound(col => col.TowerNumber)
+            .Title("Tower #")
+            .Width(125)
+            .Filterable(true);
+        column.Bound(col => col.TowerName)
+            .Filterable(filter => filter.Extra(false));
+        column.Bound(col => col.FirstSeen)
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+        column.Bound(col => col.LastSeen)
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+        column.Bound(col => col.AffiliationCount)
+            .Title("Affiliations")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.VoiceCount)
+            .Title("Voice")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.EncryptedCount)
+            .Title("Encrypted")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.DeniedCount)
+            .Title("Denied")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+    })
+    .ToolBar(toolbar =>
+    {
+        toolbar.Template(@<text>
+                            <div class="toolbar-export">
+                                <a href="#" class="k-button k-button-icontext k-grid-excel" title="Export data to Excel">
+                                    <span class="k-icon k-i-excel"></span>Export
+                                </a>
+                            </div>
+                        </text>);
+    })
+    .Filterable(filter =>
+    {
+        filter.Enabled(true);
+        filter.Operators(operators =>
+        {
+            operators.ForNumber(number =>
+                number.Clear()
+                    .IsGreaterThanOrEqualTo(">=")
+                    .IsLessThanOrEqualTo("<="));
+
+            operators.ForString(str =>
+                str.Clear()
+                    .Contains("Contains"));
+
+            operators.ForDate(date =>
+                date.Clear()
+                    .IsGreaterThanOrEqualTo(">=")
+                    .IsLessThanOrEqualTo("<="));
+        });
+    })
+    .Scrollable(scroll => scroll.Height(575))
+    .Sortable(sort =>
+        sort.SortMode(GridSortMode.SingleColumn)
+            .AllowUnsort(false))
+    .Pageable(pageable =>
+        pageable.Input(true)
+            .Refresh(true))
+    .Selectable(selectable =>
+        selectable.Mode(GridSelectionMode.Single)
+            .Type(GridSelectionType.Row))
+    .Events(events =>
+        events.DataBound("Grids.TowersDataBound")
+            .Change("Grids.TowerChange")
+            .FilterMenuInit("Filters.TowerFilterFormats"))
+    .Excel(excel =>
+        excel.AllPages(true)
+            .Filterable(true)
+            .FileName($"TalkgroupTowers-{Model.SystemID}-{Model.TalkgroupID}.xlsx"))
+    .DataSource(dataSource =>
+        dataSource.Ajax()
+            .PageSize(15)
+            .ServerOperation(true)
+            .Sort(sort => sort.Add("TowerNumber").Ascending())
+            .Read(read => read.Action("GetTowers", "Talkgroup", new { systemID = Model.SystemID, talkgroupID = Model.TalkgroupID })
+                .Data("DetailSearches.GetSearchData"))))

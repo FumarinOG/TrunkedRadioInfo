@@ -1,0 +1,9 @@
+﻿.system-info { padding: 10px; }
+.tab-strip { height: 785px; }
+.category-label { vertical-align: middle; padding-right: .5em; }
+.toolbar-datepicker { width: 150px; }
+.toolbar-export { float: right; }
+.toolbar-category { padding: 0 0 0 10px; float: left; }
+.active-dropdown { width: 110px; }
+.id-range-input { width: 100px; }
+.date-range-input { width: 150px; }

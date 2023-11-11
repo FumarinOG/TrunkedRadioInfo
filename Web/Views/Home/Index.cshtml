@@ -1,0 +1,106 @@
+﻿@using SystemInfoService
+
+<div class="card">
+    <div class="card-header">
+        <h3>Systems (<span id="SystemCountSpan"></span>)</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        @(Html.Kendo().Grid<SystemInfoViewModel>()
+            .Name("SystemsGrid")
+            .Columns(column =>
+            {
+                column.Bound(col => col.SystemID)
+                    .Width(100)
+                    .Filterable(filter => filter.Extra(false));
+                column.Bound(col => col.Description)
+                    .Filterable(filter => filter.Extra(false));
+                column.Bound(col => col.FirstSeen)
+                    .Format("{0:MM-dd-yyyy HH:mm}")
+                    .Width(150)
+                    .Filterable(true);
+                column.Bound(col => col.LastSeen)
+                    .Format("{0:MM-dd-yyyy HH:mm}")
+                    .Width(150)
+                    .Filterable(true);
+                column.Bound(col => col.TalkgroupCount)
+                    .Title("Talkgroups")
+                    .Format("{0:#,##0}")
+                    .Width(100)
+                    .Filterable(false);
+                column.Bound(col => col.RadioCount)
+                    .Title("Radios")
+                    .Format("{0:#,##0}")
+                    .Width(100)
+                    .Filterable(false);
+                column.Bound(col => col.TowerCount)
+                    .Title("Towers")
+                    .Format("{0:#,##0}")
+                    .Width(100)
+                    .Filterable(false);
+                column.Bound(col => col.RowCount)
+                    .Title("Log Rows")
+                    .Format("{0:#,##0}")
+                    .Width(100)
+                    .Filterable(false);
+            })
+            .Filterable(filter =>
+            {
+                filter.Enabled(true);
+                filter.Operators(operators =>
+                {
+                    operators.ForNumber(number =>
+                        number.Clear()
+                            .IsGreaterThanOrEqualTo(">=")
+                            .IsLessThanOrEqualTo("<="));
+
+                    operators.ForString(str =>
+                        str.Clear()
+                            .Contains("Contains"));
+
+                    operators.ForDate(date =>
+                        date.Clear()
+                            .IsGreaterThanOrEqualTo(">=")
+                            .IsLessThanOrEqualTo("<="));
+                });
+            })
+            .Sortable(sort =>
+            {
+                sort.SortMode(GridSortMode.SingleColumn);
+                sort.AllowUnsort(false);
+            })
+            .Events(events => events.DataBound("dataBound")
+                .Filter("Filters.SystemFilterFormats"))
+            .Selectable(selectable => selectable
+                .Mode(GridSelectionMode.Single)
+                .Type(GridSelectionType.Row))
+            .Events(events => events.Change("onChange"))
+            .DataSource(dataSource =>
+                dataSource.Ajax()
+                    .Sort(sort => sort.Add("SystemID"))
+                    .Read(read => read.Action("GetSystems", "Home")))
+)
+    </div>
+</div>
+
+<script src="@Url.Content("~/Scripts/web.js")"></script>
+<script type="text/javascript">
+    var systemsGrid = "#SystemsGrid",
+        systemsCountSpan = "#SystemCountSpan";
+
+    var dataBound = function (arg) {
+
+        $(systemsCountSpan)
+            .html($(systemsGrid)
+                .data("kendoGrid")
+                .dataSource.total());
+    };
+
+    function onChange(arg) {
+        var selected = this.dataItem(this.select());
+        var viewSystem = "@Url.Action("Index", "System", new { systemID = "~" })";
+
+        window.location = viewSystem.replace("~", selected.SystemID);
+    }
+</script>

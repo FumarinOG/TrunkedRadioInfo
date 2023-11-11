@@ -1,0 +1,86 @@
+﻿@using RadioService;
+
+@model RadioDataViewModel
+
+<div id="SystemInfoDiv" class="card">
+    <div class="card-header">
+        <h3>
+            <a href="@Url.Action("Index", "System", new {id = Model.SystemID})">System @Model.SystemID (@Model.SystemName)</a> / Radio @Model.RadioID (@Model.RadioData.RadioName)
+        </h3>
+    </div>
+</div>
+@if ((Model.SearchData.SearchData != null) && Model.SearchData.SearchData.IsFiltered)
+{
+    @Html.Partial("_FilterDetail", Model.SearchData)
+}
+<div class="card">
+    <div class="row">
+        <div class="col-md-4">
+            <strong>First Seen</strong> : @Model.RadioData.FirstSeenText
+        </div>
+        <div class="col-md-4">
+            <strong>Last Seen</strong> : @Model.RadioData.LastSeenText
+        </div>
+        <div class="col-md-4">
+            <strong>Encryption Seen?</strong> : @Model.RadioData.EncryptionSeen
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Affiliations</strong> : @Model.RadioData.AffiliationCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Denied</strong> : @Model.RadioData.DeniedCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Voice</strong> : @Model.RadioData.VoiceCountText
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Emergency</strong> : @Model.RadioData.EmergencyCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Encrypted</strong> : @Model.RadioData.EncryptedCount
+        </div>
+        <div class="col-md-4">
+            <strong>Data</strong> : @Model.RadioData.DeniedCountText
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        @(Html.Kendo().TabStrip()
+            .Name("RadioTabs")
+            .Items(tabStrip =>
+            {
+                tabStrip.Add()
+                    .Text("Talkgroups")
+                    .Selected(true)
+                    .LoadContentFrom("Talkgroups", "Radio", new { systemID = Model.SystemID, radioID = Model.RadioID });
+                tabStrip.Add()
+                    .Text("Towers")
+                    .LoadContentFrom("Towers", "Radio", new { systemID = Model.SystemID, radioID = Model.RadioID });
+                tabStrip.Add()
+                    .Text("History")
+                    .LoadContentFrom("History", "Radio", new { systemID = Model.SystemID, radioID = Model.RadioID });
+                tabStrip.Add()
+                    .Text("Talkgroups by Tower")
+                    .LoadContentFrom("TalkgroupsByTower", "Radio", new { systemID = Model.SystemID, radioID = Model.RadioID });
+            })
+            .HtmlAttributes(new { @class = "tab-strip" }))
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var _systemID = "@Model.SystemID",
+            _viewTalkgroupURL = "@Url.Action("Index", "Talkgroup")",
+            _viewTowerURL = "@Url.Action("Index", "Tower")",
+            _viewPatchURL = "@Url.Action("Index", "Patch")",
+            _searchData = Common.GetSearchData("@Model.SearchData.SearchDataEncoded");
+    </script>
+}
+
+@Scripts.Render("~/Scripts/web-radio.js")

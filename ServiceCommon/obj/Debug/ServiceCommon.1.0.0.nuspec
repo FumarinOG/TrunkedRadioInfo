@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ServiceCommon</id>
+    <version>1.0.0</version>
+    <authors>ServiceCommon</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="ff257b8abd486d2b62f5d0823ab9fe7925ff519a" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="DataLibrary" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="ObjectLibrary" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AutoMapper" version="10.1.1" exclude="Build,Analyzers" />
+        <dependency id="NLog" version="5.1.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ServiceCommon\bin\Debug\netstandard2.0\ServiceCommon.dll" target="lib\netstandard2.0\ServiceCommon.dll" />
+  </files>
+</package>

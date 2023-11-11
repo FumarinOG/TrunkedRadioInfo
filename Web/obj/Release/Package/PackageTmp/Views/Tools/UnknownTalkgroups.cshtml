@@ -1,0 +1,169 @@
+﻿@using TalkgroupService
+
+<div id="SystemInfoDiv" class="card">
+    <div class="card-header">
+        <h3>Unknown Talkgroups</h3>
+    </div>
+</div>
+<div class="row btn-toolbar">
+    <div class="col">
+        @Html.Label("System")
+        @(Html.Kendo().DropDownList()
+            .Name("SystemDropDownList")
+            .HtmlAttributes(new { style = "width: 400px" })
+            .DataTextField("SystemIDDescription")
+            .DataValueField("SystemID")
+            .OptionLabel(" ")
+            .Events(events => events.Change("SystemChange"))
+            .DataSource(dataSource =>
+                dataSource.Read(read => read.Action("GetSystemList", "Tools"))))
+
+    </div>
+</div>
+<div class="row" style="padding-top: 10px;">
+    @(Html.Kendo().Grid<TalkgroupViewModel>()
+        .Name("UnknownTalkgroupsGrid")
+        .Columns(column =>
+        {
+            column.Bound(col => col.TalkgroupID)
+                .Title("ID")
+                .Width(95)
+                .Format("{0:0}")
+                .Filterable(true);
+            column.Bound(col => col.TalkgroupName)
+                .Title("Name")
+                .Filterable(filter => filter.Extra(false));
+            column.Bound(col => col.Towers)
+                .Title("Towers")
+                .Width(200)
+                .Filterable(false);
+            column.Bound(col => col.AffiliationCount)
+                .Title("Affiliations")
+                .Format("{0:#,##0}")
+                .Width(100)
+                .Filterable(false);
+            column.Bound(col => col.VoiceCount)
+                .Title("Voice")
+                .Format("{0:#,##0}")
+                .Width(100)
+                .Filterable(false);
+            column.Bound(col => col.EncryptedCount)
+                .Title("Encrypted")
+                .Format("{0:#,##0}")
+                .Width(100)
+                .Filterable(false);
+            column.Bound(col => col.PatchCount)
+                .Title("Patches")
+                .Format("{0:#,##0}")
+                .Width(100)
+                .Filterable(false);
+            column.Bound(col => col.FirstSeen)
+                .Format("{0:MM-dd-yyyy HH:mm}")
+                .Width(150)
+                .Filterable(true);
+            column.Bound(col => col.LastSeen)
+                .Format("{0:MM-dd-yyyy HH:mm}")
+                .Width(150)
+                .Filterable(true);
+        })
+        .ToolBar(toolbar =>
+        {
+            toolbar.Template(@<text>
+                                <div class="toolbar-export">
+                                    <a href="#" class="k-button k-button-icontext k-grid-excel" title="Export data to Excel">
+                                        <span class="k-icon k-i-excel"></span>Export
+                                    </a>
+                                </div>
+                             </text>);
+        })
+        .AutoBind(false)
+        .Filterable(filter =>
+        {
+            filter.Enabled(true);
+            filter.Operators(operators =>
+            {
+                operators.ForNumber(number =>
+                {
+                    number.Clear();
+                    number.IsGreaterThanOrEqualTo(">=");
+                    number.IsLessThanOrEqualTo("<=");
+                });
+
+                operators.ForString(str =>
+                {
+                    str.Clear();
+                    str.Contains("Contains");
+                });
+            });
+        })
+        .Scrollable(scroll => scroll.Height(575))
+        .Sortable(sort =>
+            sort.SortMode(GridSortMode.SingleColumn)
+                .AllowUnsort(false))
+        .Pageable(pageable =>
+            pageable.Input(true)
+                .Refresh(true))
+        .Selectable(selectable =>
+            selectable.Mode(GridSelectionMode.Single)
+                .Type(GridSelectionType.Row))
+        .Events(events =>
+        {
+            events.FilterMenuInit("Filters.TalkgroupsFilterFormats")
+                .ExcelExport("ExcelExport");
+            events.Change("Grids.TalkgroupChange")
+                .FilterMenuInit("Filters.TalkgroupFilterFormats");
+        })
+        .Excel(excel =>
+            excel.AllPages(true)
+                .Filterable(true))
+        .DataSource(dataSource =>
+            dataSource.Ajax()
+                .PageSize(15)
+                .ServerOperation(true)
+                .Sort(sort => sort.Add("TalkgroupID").Ascending())
+                .Read(read => read.Action("GetUnknownTalkgroups", "Tools")
+                    .Data("GetSelectedSystem"))))
+
+    @(Html.Kendo().Tooltip()
+        .For("#UnknownTalkgroupsGrid")
+        .Position(TooltipPosition.Right)
+        .Filter("td:nth-child(3)")
+        .ContentHandler("TowerListToolTip")
+        .Width(200)
+        .AutoHide(true));
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var _viewTalkgroupURL = "@Url.Action("Index", "Talkgroup")";
+
+        function SystemChange() {
+            $("#UnknownTalkgroupsGrid").data("kendoGrid").dataSource.read();
+            _systemID = GetSelectedSystemID();
+        }
+
+        function GetSelectedSystemID() {
+            return $("#SystemDropDownList").data("kendoDropDownList").value();
+        }
+
+        function ExcelExport(args) {
+            args.workbook.fileName = kendo.format("UnknownTalkgroups-Sys{0}.xlsx", GetSelectedSystemID());
+        }
+
+        function GetSelectedSystem() {
+
+            return {
+                systemID: GetSelectedSystemID()
+            };
+        }
+
+        function TowerListToolTip(event) {
+            var dataItem = $("#UnknownTalkgroupsGrid").data("kendoGrid").dataItem(event.target.closest("tr"));
+
+            if (dataItem.Towers.length !== 0) {
+                return dataItem.Towers;
+            }
+        }
+    </script>
+}

@@ -1,0 +1,125 @@
+﻿@using SystemDetailService
+@using TowerService
+
+@model SystemDetailViewModel
+
+@(Html.Kendo().Grid<TowerViewModel>()
+    .Name("TowersGrid")
+    .Columns(column =>
+    {
+        column.Bound(col => col.TowerNumber)
+            .Title("Tower #")
+            .Width(125)
+            .Filterable(true);
+        column.Bound(col => col.TowerName)
+            .Title("Name")
+            .Filterable(filter => filter.Extra(false));
+        column.Bound(col => col.FirstSeen)
+            .Title("First Seen")
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+        column.Bound(col => col.LastSeen)
+            .Title("Last Seen")
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+        column.Bound(col => col.HitCount)
+            .Title("Hit Count")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+    })
+    .ToolBar(toolbar =>
+    {
+        toolbar.Template(@<text>
+                            <div class="toolbar-category">
+                                @(Html.Kendo().DropDownList()
+                                    .Name("TowerViewDropDownList")
+                                    .Items(dropDown =>
+                                    {
+                                        dropDown.Add().Text("All").Value("All");
+                                        dropDown.Add().Text("Active Only").Value("ActiveOnly");
+                                    })
+                                    .HtmlAttributes(new { @class = "active-dropdown" })
+                                    .Events(events => events.Change("Grids.TowerViewDropDownListChange")))
+                            </div>
+                            <div class="toolbar-category">
+                                <label class="category-label">Data Dates</label>
+                                @(Html.Kendo().DatePicker()
+                                    .Name("TowerDateFromPicker")
+                                    .Format("MM-dd-yyyy")
+                                    .HtmlAttributes(new { @class = "grid-datepicker" })
+                                    .Events(events => events.Change("Grids.TowerDateFromChange")))
+                                <span> to </span>
+                                @(Html.Kendo().DatePicker()
+                                    .Name("TowerDateToPicker")
+                                    .Format("MM-dd-yyyy")
+                                    .HtmlAttributes(new { @class = "grid-datepicker" }))
+                            </div>
+                            <div class="toolbar-category">
+                                <a href="#" id="TowerFilterAnchor" class="k-button k-button-icontext" title="Apply filter">
+                                    <span class="k-icon k-i-filter"></span>Filter
+                                </a>
+                            </div>
+                            <div class="toolbar-export">
+                                <a href="#" class="k-button k-button-icontext k-grid-excel" title="Export data to Excel">
+                                    <span class="k-icon k-i-excel"></span>Export
+                                </a>
+                            </div>
+                        </text>);
+    })
+    .Filterable(filter =>
+    {
+        filter.Enabled(true);
+        filter.Operators(operators =>
+        {
+            operators.ForNumber(number =>
+                number.Clear()
+                    .IsGreaterThanOrEqualTo(">=")
+                    .IsLessThanOrEqualTo("<="));
+
+            operators.ForString(str =>
+                str.Clear()
+                    .Contains("Contains"));
+
+            operators.ForDate(date =>
+                date.Clear()
+                    .IsGreaterThanOrEqualTo(">=")
+                    .IsLessThanOrEqualTo("<="));
+        });
+    })
+    .Scrollable(scroll => scroll.Height(575))
+    .Sortable(sort =>
+        sort.SortMode(GridSortMode.SingleColumn)
+            .AllowUnsort(false))
+    .Pageable(pageable =>
+        pageable.Input(true)
+            .Refresh(true))
+    .Selectable(selectable =>
+        selectable.Mode(GridSelectionMode.Single)
+            .Type(GridSelectionType.Row))
+    .Events(events =>
+        events.Change("Grids.TowerChange")
+            .FilterMenuInit("Filters.TowerFilterFormats"))
+    .Excel(excel =>
+        excel.AllPages(true)
+            .Filterable(true)
+            .FileName($"Towers-{Model.SystemID}.xlsx"))
+    .DataSource(dataSource =>
+        dataSource.Ajax()
+            .PageSize(15)
+            .ServerOperation(true)
+            .Sort(sort => sort.Add("TowerNumber").Ascending())
+            .Read(read => read.Action("GetTowers", "System")
+                .Data("SystemSearches.GetTowerSearchData"))))
+
+@section scripts
+{
+    <script type="text/javascript">
+        $("#TowerFilterAnchor").on("click",
+            function() {
+                $("#TowersGrid").data("kendoGrid").dataSource.read();
+            });
+    </script>
+}

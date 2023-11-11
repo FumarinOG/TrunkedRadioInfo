@@ -1,0 +1,24 @@
+﻿@using ServiceCommon
+
+@model SearchDataViewModel
+
+<div class="card">
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center">
+                <strong>The Following Data Filters are In Effect</strong>
+            </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" style="text-align: right;">
+            <strong>Active Only?</strong> : <em>@Model.SearchData.ActiveOnlyText</em>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+            <strong>Date From</strong> : <em>@Model.SearchData.DateFromText</em>
+        </div>
+        <div class="col-md-4" style="text-align: left;">
+            <strong>Date To</strong> : <em>@Model.SearchData.DateToText</em>
+        </div>
+    </div>
+</div>

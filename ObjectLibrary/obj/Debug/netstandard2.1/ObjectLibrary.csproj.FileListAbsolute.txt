@@ -1,0 +1,10 @@
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\bin\Debug\netstandard2.1\ObjectLibrary.deps.json
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\bin\Debug\netstandard2.1\ObjectLibrary.dll
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\bin\Debug\netstandard2.1\ObjectLibrary.pdb
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\obj\Debug\netstandard2.1\ObjectLibrary.csproj.AssemblyReference.cache
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\obj\Debug\netstandard2.1\ObjectLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\obj\Debug\netstandard2.1\ObjectLibrary.AssemblyInfoInputs.cache
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\obj\Debug\netstandard2.1\ObjectLibrary.AssemblyInfo.cs
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\obj\Debug\netstandard2.1\ObjectLibrary.csproj.CoreCompileInputs.cache
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\obj\Debug\netstandard2.1\ObjectLibrary.dll
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ObjectLibrary\obj\Debug\netstandard2.1\ObjectLibrary.pdb

@@ -1,0 +1,48 @@
+﻿@using SystemDetailService
+
+@model SystemDetailViewModel
+
+<div class="card">
+    <div class="card-header">
+        <h3>
+            <span id="SystemInfoSpan" data-system-id="@Model.SystemID">System ID @Model.SystemID (@Model.SystemName)</span>
+        </h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        @(Html.Kendo().TabStrip()
+            .Name("SystemTabs")
+            .Items(tabStrip =>
+            {
+                tabStrip.Add()
+                    .Text($"Talkgroups ({Model.TalkgroupCount:#,##0})")
+                    .Selected(true)
+                    .LoadContentFrom("Talkgroups", "System", new { systemID = Model.SystemID });
+                tabStrip.Add()
+                    .Text($"Radios ({Model.RadioCount:#,##0})")
+                    .LoadContentFrom("Radios", "System", new { systemID = Model.SystemID });
+                tabStrip.Add()
+                    .Text($"Towers ({Model.TowerCount:#,##0})")
+                    .LoadContentFrom("Towers", "System", new { systemID = Model.SystemID });
+                tabStrip.Add()
+                    .Text($"Patches ({Model.PatchCount:#,##0})")
+                    .LoadContentFrom("Patches", "System", new { systemID = Model.SystemID });
+                tabStrip.Add()
+                    .Text($"ProcessedFiles ({Model.ProcessedFileCount:#,##0})")
+                    .LoadContentFrom("ProcessedFiles", "System", new { systemID = Model.SystemID });
+            })
+            .HtmlAttributes(new { @class = "tab-strip" }))
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var _systemID = "@Model.SystemID",
+            _viewTalkgroupURL = "@Url.Action("Index", "Talkgroup")",
+            _viewRadioURL = "@Url.Action("Index", "Radio")",
+            _viewTowerURL = "@Url.Action("Index", "Tower")",
+            _viewPatchURL = "@Url.Action("Index", "Patch")";
+    </script>
+}

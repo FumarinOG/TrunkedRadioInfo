@@ -1,0 +1,105 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "SystemDetailService/1.0.0": {
+        "dependencies": {
+          "DataLibrary": "1.0.0"
+        },
+        "runtime": {
+          "SystemDetailService.dll": {}
+        }
+      },
+      "NLog/5.1.5": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.5.1789"
+          }
+        }
+      },
+      "DataAccessLibrary/1.0.0": {
+        "runtime": {
+          "DataAccessLibrary.dll": {}
+        }
+      },
+      "DataLibrary/1.0.0": {
+        "dependencies": {
+          "DataAccessLibrary": "1.0.0",
+          "ObjectLibrary": "1.0.0"
+        },
+        "runtime": {
+          "DataLibrary.dll": {}
+        }
+      },
+      "ObjectLibrary/1.0.0": {
+        "dependencies": {
+          "NLog": "5.1.5"
+        },
+        "runtime": {
+          "ObjectLibrary.dll": {}
+        }
+      },
+      "AutoMapper/10.0.0.0": {
+        "runtime": {
+          "AutoMapper.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.1.0"
+          }
+        }
+      },
+      "EntityFramework/6.0.0.0": {
+        "runtime": {
+          "EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.400.420.21404"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SystemDetailService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NLog/5.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZITyL6pD8f7w6ahHoP7DC4KpsyZMVuSsP7lmMo9WOYg/65/yEqpCteEOWI9lOIqJB2i8/obIj1ivIAOiMt4+eg==",
+      "path": "nlog/5.1.5",
+      "hashPath": "nlog.5.1.5.nupkg.sha512"
+    },
+    "DataAccessLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ObjectLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/10.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityFramework/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,2 @@
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\Web\obj\Debug\Web.csproj.AssemblyReference.cache
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache

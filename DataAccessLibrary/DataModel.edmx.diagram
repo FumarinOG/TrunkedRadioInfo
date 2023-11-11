@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a5a04d8e57a84d6282dc6e98e87ffe4e" Name="DataDiagram" ZoomLevel="64">
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.NLog" Width="1.75" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.Patches" Width="1.75" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.ProcessedFiles" Width="1.75" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.RadioHistory" Width="1.75" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.Radios" Width="1.75" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.Systems" Width="1.75" PointX="0.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TalkgroupHistory" Width="1.75" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TalkgroupRadios" Width="1.75" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.Talkgroups" Width="1.75" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempPatches" Width="1.75" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempRadioHistory" Width="1.75" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempRadios" Width="1.75" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempSystems" Width="1.75" PointX="5.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTalkgroupHistory" Width="1.75" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTalkgroupRadios" Width="1.75" PointX="11.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTalkgroups" Width="1.75" PointX="7.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowerFrequencies" Width="1.75" PointX="5.25" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowerFrequencyUsage" Width="1.75" PointX="11.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowerRadios" Width="1.75" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowers" Width="1.75" PointX="13.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowerTalkgroupRadios" Width="1.75" PointX="13.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowerTalkgroups" Width="1.75" PointX="9.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerFrequencies" Width="1.75" PointX="5.25" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerFrequencyUsage" Width="1.75" PointX="5.25" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerNeighbors" Width="1.75" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerRadios" Width="1.75" PointX="15.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.Towers" Width="1.75" PointX="3" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerTables" Width="1.75" PointX="15.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerTalkgroupRadios" Width="1.75" PointX="11.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerTalkgroups" Width="1.75" PointX="13.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerFrequencyRadios" Width="1.75" PointX="15.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TowerFrequencyTalkgroups" Width="1.75" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_Patches_Systems" ManuallyRouted="false" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_ProcessedFiles_Systems" ManuallyRouted="false" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_Radios_Systems" ManuallyRouted="false" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_Talkgroups_Systems" ManuallyRouted="false" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_Towers_Systems" ManuallyRouted="false" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_TempTowerFrequencies_Towers" ManuallyRouted="false" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_TowerFrequencies_Towers" ManuallyRouted="false" />
+        <AssociationConnector Association="TrunkedRadioInfoModel.FK_TowerFrequencyUsage_Towers" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowerFrequencyRadios" Width="1.75" PointX="5.375" PointY="17.75" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TempTowerFrequencyTalkgroups" Width="1.75" PointX="18.375" PointY="6.75" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.RadioHistories" Width="1.5" PointX="18.375" PointY="11.75" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.TalkgroupHistories" Width="1.5" PointX="18.375" PointY="15.75" />
+        <EntityTypeShape EntityType="TrunkedRadioInfoModel.database_firewall_rules" Width="1.5" PointX="18.375" PointY="11.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

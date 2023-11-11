@@ -1,0 +1,14 @@
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\DataAccessLibrary.dll.config
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\DataAccessLibrary.dll
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\DataAccessLibrary.pdb
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\EntityFramework.dll
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\EntityFramework.SqlServer.dll
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\NLog.dll
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\EntityFramework.xml
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\EntityFramework.SqlServer.xml
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\bin\Release\NLog.xml
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\obj\Release\DataAccessLibrary.csproj.AssemblyReference.cache
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\obj\Release\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\obj\Release\DataAccessLibrary.csproj.CopyComplete
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\obj\Release\DataAccessLibrary.dll
+C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DataAccessLibrary\obj\Release\DataAccessLibrary.pdb

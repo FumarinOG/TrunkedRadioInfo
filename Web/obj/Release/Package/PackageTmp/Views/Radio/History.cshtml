@@ -1,0 +1,71 @@
+﻿@using RadioHistoryService
+@using RadioService
+
+@model RadioDetailViewModel
+
+@(Html.Kendo().Grid<RadioHistoryViewModel>()
+    .Name("HistoryGrid")
+    .Columns(column =>
+    {
+        column.Bound(col => col.RadioName)
+            .Filterable(filter => filter.Extra(false));
+        column.Bound(col => col.FirstSeen)
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+        column.Bound(col => col.LastSeen)
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+    })
+    .ToolBar(toolbar =>
+    {
+        toolbar.Template(@<text>
+                            <div class="toolbar-export">
+                                <a href="#" class="k-button k-button-icontext k-grid-excel" title="Export data to Excel">
+                                    <span class="k-icon k-i-excel"></span>Export
+                                </a>
+                            </div>
+                        </text>);
+    })
+    .Filterable(filter =>
+    {
+        filter.Enabled(true);
+        filter.Operators(operators =>
+        {
+            operators.ForString(str =>
+                str.Clear()
+                    .Contains("Contains"));
+
+            operators.ForDate(date =>
+                date.Clear()
+                    .IsGreaterThanOrEqualTo(">=")
+                    .IsLessThanOrEqualTo("<="));
+        });
+    })
+    .Scrollable(scroll => scroll.Height(575))
+    .Sortable(sort =>
+        sort.SortMode(GridSortMode.SingleColumn)
+            .AllowUnsort(false))
+    .Pageable(pageable =>
+        pageable.Input(true)
+            .Refresh(true))
+    .Selectable(selectable =>
+        selectable.Mode(GridSelectionMode.Single)
+            .Type(GridSelectionType.Row))
+    .Events(events =>
+        events.DataBound("Grids.HistoryDataBound")
+            .FilterMenuInit("Filters.TowerFilterFormats"))
+    .Excel(excel =>
+        excel.AllPages(true)
+            .Filterable(true)
+            .FileName($"RadioHistoryData-{Model.SystemID}-{Model.RadioID}.xlsx"))
+    .DataSource(dataSource =>
+        dataSource.Ajax()
+            .PageSize(5)
+            .ServerOperation(true)
+            .Sort(sort => sort.Add("LastSeen").Descending())
+            .Read(read => read.Action("GetHistory", "Radio", new { systemID = Model.SystemID, radioID = Model.RadioID })
+                .Data("DetailSearches.GetSearchData"))))
+
+

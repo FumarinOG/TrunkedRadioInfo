@@ -1,0 +1,112 @@
+﻿@using RadioService
+
+<div id="SystemInfoDiv" class="card">
+    <div class="card-header">
+        <h3>Radio Names</h3>
+    </div>
+</div>
+<div class="row btn-toolbar">
+    <div class="col">
+        @Html.Label("System")
+        @(Html.Kendo().DropDownList()
+            .Name("SystemDropDownList")
+            .HtmlAttributes(new { style = "width: 400px" })
+            .DataTextField("SystemIDDescription")
+            .DataValueField("SystemID")
+            .OptionLabel(" ")
+            .Events(events => events.Change("SystemChange"))
+            .DataSource(dataSource =>
+                dataSource.Read(read => read.Action("GetSystemList", "Tools"))))
+
+    </div>
+</div>
+<div class="row" style="padding-top: 10px;">
+    @(Html.Kendo().Grid<RadioNameViewModel>()
+        .Name("RadioNameGrid")
+        .Columns(column =>
+        {
+            column.Bound(col => col.RadioID)
+                .Title("ID")
+                .Width(100)
+                .Filterable(true);
+            column.Bound(col => col.Name)
+                .Filterable(filter => filter.Extra(false));
+        })
+        .ToolBar(toolbar =>
+        {
+            toolbar.Template(@<text>
+                                <div class="toolbar-export">
+                                    <a href="#" class="k-button k-button-icontext k-grid-excel" title="Export data to Excel">
+                                        <span class="k-icon k-i-excel"></span>Export
+                                    </a>
+                                </div>
+                              </text>);
+        })
+        .AutoBind(false)
+        .Filterable(filter =>
+        {
+            filter.Enabled(true);
+            filter.Operators(operators =>
+            {
+                operators.ForNumber(number =>
+                {
+                    number.Clear();
+                    number.IsGreaterThanOrEqualTo(">=");
+                    number.IsLessThanOrEqualTo("<=");
+                });
+
+                operators.ForString(str =>
+                {
+                    str.Clear();
+                    str.Contains("Contains");
+                });
+            });
+        })
+        .Scrollable(scroll => scroll.Height(575))
+        .Sortable(sort =>
+            sort.SortMode(GridSortMode.SingleColumn)
+                .AllowUnsort(false))
+        .Pageable(pageable =>
+            pageable.Input(true)
+                .Refresh(true))
+        .Selectable(selectable =>
+            selectable.Mode(GridSelectionMode.Single)
+                .Type(GridSelectionType.Row))
+        .Events(events =>
+            events.FilterMenuInit("Filters.RadioFilterFormats")
+                .ExcelExport("ExcelExport"))
+        .Excel(excel =>
+            excel.AllPages(true)
+                .Filterable(true))
+        .DataSource(dataSource =>
+            dataSource.Ajax()
+                .PageSize(15)
+                .ServerOperation(true)
+                .Sort(sort => sort.Add("RadioID").Ascending())
+                .Read(read => read.Action("GetRadioNames", "Tools")
+                    .Data("GetSelectedSystem"))))
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+    function SystemChange() {
+        $("#RadioNameGrid").data("kendoGrid").dataSource.read();
+    }
+
+    function GetSelectedSystemID() {
+        return $("#SystemDropDownList").data("kendoDropDownList").value();
+    }
+
+    function ExcelExport(args) {
+        args.workbook.fileName = kendo.format("RadioNames-Sys{0}.xlsx", GetSelectedSystemID());
+    }
+
+    function GetSelectedSystem() {
+
+        return {
+            systemID: GetSelectedSystemID()
+        };
+    }
+    </script>
+}

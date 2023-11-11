@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCEC1E1F-53EB-4A9C-8109-9409F4FFFDE1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataLibrary</RootNamespace>
+    <AssemblyName>DataLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.2.0\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\DataTableSkip.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FilterData.cs" />
+    <Compile Include="Interfaces\IDatabaseStatsRepository.cs" />
+    <Compile Include="Interfaces\IMergeRepository.cs" />
+    <Compile Include="Interfaces\IPatchRepository.cs" />
+    <Compile Include="Interfaces\IProcessedFileRepository.cs" />
+    <Compile Include="Interfaces\IRadioHistoryRepository.cs" />
+    <Compile Include="Interfaces\IRadioRepository.cs" />
+    <Compile Include="Interfaces\ISystemInfoRepository.cs" />
+    <Compile Include="Interfaces\ITalkgroupHistoryRepository.cs" />
+    <Compile Include="Interfaces\ITalkgroupRadioRepository.cs" />
+    <Compile Include="Interfaces\ITalkgroupRepository.cs" />
+    <Compile Include="Interfaces\ITempRecord.cs" />
+    <Compile Include="Interfaces\ITempRepository.cs" />
+    <Compile Include="Interfaces\ITowerFrequencyRadioRepository.cs" />
+    <Compile Include="Interfaces\ITowerFrequencyRepository.cs" />
+    <Compile Include="Interfaces\ITowerFrequencyTalkgroupRepository.cs" />
+    <Compile Include="Interfaces\ITowerFrequencyUsageRepository.cs" />
+    <Compile Include="Interfaces\ITowerNeighborRepository.cs" />
+    <Compile Include="Interfaces\ITowerRadioRepository.cs" />
+    <Compile Include="Interfaces\ITowerRepository.cs" />
+    <Compile Include="Interfaces\ITowerTableRepository.cs" />
+    <Compile Include="Interfaces\ITowerTalkgroupRadioRepository.cs" />
+    <Compile Include="Interfaces\ITowerTalkgroupRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DatabaseStatsRepository.cs" />
+    <Compile Include="Repositories\MergeRepository.cs" />
+    <Compile Include="Repositories\PatchRepository.cs" />
+    <Compile Include="Repositories\ProcessedFileRepository.cs" />
+    <Compile Include="Repositories\RadioHistoryRepository.cs" />
+    <Compile Include="Repositories\RadioRepository.cs" />
+    <Compile Include="Repositories\TalkgroupHistoryRepository.cs" />
+    <Compile Include="Repositories\TalkgroupRadioRepository.cs" />
+    <Compile Include="Repositories\TalkgroupRepository.cs" />
+    <Compile Include="Repositories\TempRepository.cs" />
+    <Compile Include="Repositories\TowerFrequencyRadioRepository.cs" />
+    <Compile Include="Repositories\TowerFrequencyRepository.cs" />
+    <Compile Include="Repositories\TowerFrequencyTalkgroupRepository.cs" />
+    <Compile Include="Repositories\TowerFrequencyUsageRepository.cs" />
+    <Compile Include="Repositories\TowerNeighborRepository.cs" />
+    <Compile Include="Repositories\TowerRadioRepository.cs" />
+    <Compile Include="Repositories\TowerRepository.cs" />
+    <Compile Include="Repositories\TowerTableRepository.cs" />
+    <Compile Include="Repositories\TowerTalkgroupRadioRepository.cs" />
+    <Compile Include="Repositories\TowerTalkgroupRepository.cs" />
+    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="Repositories\SystemInfoRepository.cs" />
+    <Compile Include="TempData\TempPatch.cs" />
+    <Compile Include="TempData\TempRadio.cs" />
+    <Compile Include="TempData\TempRadioHistory.cs" />
+    <Compile Include="TempData\TempSystemInfo.cs" />
+    <Compile Include="TempData\TempTalkgroup.cs" />
+    <Compile Include="TempData\TempTalkgroupHistory.cs" />
+    <Compile Include="TempData\TempTalkgroupRadio.cs" />
+    <Compile Include="TempData\TempTower.cs" />
+    <Compile Include="TempData\TempTowerFrequencyRadio.cs" />
+    <Compile Include="TempData\TempTowerFrequencyTalkgroup.cs" />
+    <Compile Include="TempData\TempTowerFrequencyUsage.cs" />
+    <Compile Include="TempData\TempTowerRadio.cs" />
+    <Compile Include="TempData\TempTowerTalkgroup.cs" />
+    <Compile Include="TempData\TempTowerTalkgroupRadio.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLibrary\DataAccessLibrary.csproj">
+      <Project>{8dc15a06-0faa-415f-8bc0-e886319326af}</Project>
+      <Name>DataAccessLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjectLibrary\ObjectLibrary.csproj">
+      <Project>{cee05238-0e81-42d6-88c9-4b015dc92a2b}</Project>
+      <Name>ObjectLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

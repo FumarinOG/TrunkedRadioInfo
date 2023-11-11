@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = TowerFrequencyRadioService.Tests.Core
+build_property.ProjectDir = C:\Users\mike\Source\Repos\GitHub\TrunkedRadioInfo\TowerFrequencyRadioService.Tests.Core\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,0 +1,2706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TrunkedRadioInfoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MachineName" Type="nvarchar" MaxLength="200" />
+    <Property Name="SiteName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Logged" Type="datetime" Nullable="false" />
+    <Property Name="Level" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Logger" Type="nvarchar" MaxLength="300" />
+    <Property Name="Properties" Type="nvarchar(max)" />
+    <Property Name="ServerName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Port" Type="nvarchar" MaxLength="100" />
+    <Property Name="Url" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Https" Type="bit" />
+    <Property Name="ServerAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="RemoteAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="Callsite" Type="nvarchar" MaxLength="300" />
+    <Property Name="Exception" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Patches">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="FromTalkgroupID" Type="int" Nullable="false" />
+    <Property Name="ToTalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="HitCount" Type="int" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProcessedFiles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileDate" Type="datetime" Nullable="false" />
+    <Property Name="DateProcessed" Type="datetime" />
+    <Property Name="RowCount" Type="int" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RadioHistories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RadioHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Radios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeenProgram" Type="datetime" />
+    <Property Name="LastSeenProgramUnix" Type="bigint" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="FGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="BGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="HitCount" Type="int" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+    <Property Name="PhaseIISeen" Type="bit" />
+  </EntityType>
+  <EntityType Name="Systems">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SystemIDDecimal" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="WACN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TalkgroupHistories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TalkgroupHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TalkgroupRadios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Talkgroups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeenProgram" Type="datetime" />
+    <Property Name="LastSeenProgramUnix" Type="bigint" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="FirstSeenProgram" Type="datetime" />
+    <Property Name="FirstSeenProgramUnix" Type="bigint" />
+    <Property Name="FGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="BGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="EncryptionSeen" Type="bit" />
+    <Property Name="IgnoreEmergencySignal" Type="bit" />
+    <Property Name="HitCount" Type="int" Nullable="false" />
+    <Property Name="HitCountProgram" Type="int" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+    <Property Name="PhaseIISeen" Type="bit" />
+  </EntityType>
+  <EntityType Name="TempPatches">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="FromTalkgroupID" />
+      <PropertyRef Name="ToTalkgroupID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="FromTalkgroupID" Type="int" Nullable="false" />
+    <Property Name="ToTalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="HitCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempRadioHistory">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="RadioID" />
+      <PropertyRef Name="Description" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempRadios">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="RadioID" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeenProgram" Type="datetime" />
+    <Property Name="LastSeenProgramUnix" Type="bigint" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="FGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="BGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="HitCount" Type="int" Nullable="false" />
+    <Property Name="PhaseIISeen" Type="bit" />
+  </EntityType>
+  <EntityType Name="TempSystems">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SystemIDDecimal" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="WACN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTalkgroupHistory">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TalkgroupID" />
+      <PropertyRef Name="Description" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTalkgroupRadios">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TalkgroupID" />
+      <PropertyRef Name="RadioID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTalkgroups">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TalkgroupID" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeenProgram" Type="datetime" />
+    <Property Name="LastSeenProgramUnix" Type="bigint" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="FirstSeenProgram" Type="datetime" />
+    <Property Name="FirstSeenProgramUnix" Type="bigint" />
+    <Property Name="FGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="BGColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="EncryptionSeen" Type="bit" />
+    <Property Name="IgnoreEmergencySignal" Type="bit" />
+    <Property Name="HitCount" Type="int" Nullable="false" />
+    <Property Name="HitCountProgram" Type="int" Nullable="false" />
+    <Property Name="PhaseIISeen" Type="bit" />
+  </EntityType>
+  <EntityType Name="TempTowerFrequencies">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="Frequency" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Channel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Usage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InputChannel" Type="nvarchar" MaxLength="50" />
+    <Property Name="InputFrequency" Type="nvarchar" MaxLength="50" />
+    <Property Name="InputExplicit" Type="int" />
+    <Property Name="HitCount" Type="int" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTowerFrequencyRadios">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="Frequency" />
+      <PropertyRef Name="RadioID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTowerFrequencyTalkgroups">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="Frequency" />
+      <PropertyRef Name="TalkgroupID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTowerFrequencyUsage">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="Frequency" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Channel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" />
+    <Property Name="DeniedCount" Type="int" />
+    <Property Name="VoiceGrantCount" Type="int" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" />
+    <Property Name="DataCount" Type="int" />
+    <Property Name="PrivateDataCount" Type="int" />
+    <Property Name="CWIDCount" Type="int" />
+    <Property Name="AlertCount" Type="int" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTowerRadios">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="RadioID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTowers">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerNumber" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerNumber" Type="int" Nullable="false" />
+    <Property Name="TowerNumberHex" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="HitCount" Type="int" />
+    <Property Name="WACN" Type="nvarchar" MaxLength="50" />
+    <Property Name="ControlCapabilities" Type="nvarchar" MaxLength="50" />
+    <Property Name="Flavor" Type="nvarchar" MaxLength="50" />
+    <Property Name="CallSigns" Type="nvarchar" MaxLength="50" />
+    <Property Name="TimeStamp" Type="datetime" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTowerTalkgroupRadios">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="TalkgroupID" />
+      <PropertyRef Name="RadioID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempTowerTalkgroups">
+    <Key>
+      <PropertyRef Name="SessionID" />
+      <PropertyRef Name="SystemID" />
+      <PropertyRef Name="TowerID" />
+      <PropertyRef Name="TalkgroupID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="SessionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerFrequencies">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Channel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Usage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InputChannel" Type="nvarchar" MaxLength="50" />
+    <Property Name="InputFrequency" Type="nvarchar" MaxLength="50" />
+    <Property Name="InputExplicit" Type="int" />
+    <Property Name="HitCount" Type="int" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerFrequencyRadios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerFrequencyTalkgroups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerFrequencyUsage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="Channel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" />
+    <Property Name="RadioID" Type="int" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" />
+    <Property Name="DeniedCount" Type="int" />
+    <Property Name="VoiceGrantCount" Type="int" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" />
+    <Property Name="DataCount" Type="int" />
+    <Property Name="PrivateDataCount" Type="int" />
+    <Property Name="CWIDCount" Type="int" />
+    <Property Name="AlertCount" Type="int" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerNeighbors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="NeighborSystemID" Type="int" Nullable="false" />
+    <Property Name="NeighborTowerID" Type="int" Nullable="false" />
+    <Property Name="NeighborTowerNumberHex" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NeighborChannel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NeighborFrequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NeighborTowerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerRadios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Towers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerNumber" Type="int" Nullable="false" />
+    <Property Name="TowerNumberHex" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="HitCount" Type="int" />
+    <Property Name="WACN" Type="nvarchar" MaxLength="50" />
+    <Property Name="ControlCapabilities" Type="nvarchar" MaxLength="50" />
+    <Property Name="Flavor" Type="nvarchar" MaxLength="50" />
+    <Property Name="CallSigns" Type="nvarchar" MaxLength="50" />
+    <Property Name="TimeStamp" Type="datetime" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerTables">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="TableID" Type="int" Nullable="false" />
+    <Property Name="BaseFrequency" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Spacing" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InputOffset" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AssumedConfirmed" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Bandwidth" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Slots" Type="int" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerTalkgroupRadios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="RadioID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TowerTalkgroups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="TowerID" Type="int" Nullable="false" />
+    <Property Name="TalkgroupID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AffiliationCount" Type="int" Nullable="false" />
+    <Property Name="DeniedCount" Type="int" Nullable="false" />
+    <Property Name="VoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EmergencyVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="EncryptedVoiceGrantCount" Type="int" Nullable="false" />
+    <Property Name="DataCount" Type="int" Nullable="false" />
+    <Property Name="PrivateDataCount" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="FirstSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastSeen" Type="datetime" Nullable="false" />
+    <Property Name="LastModified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TrunkedRadioInfo.sys.database_firewall_rules' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="database_firewall_rules">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="start_ip_address" />
+      <PropertyRef Name="end_ip_address" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="modify_date" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="start_ip_address" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="end_ip_address" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="modify_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Patches_Systems">
+    <End Role="Systems" Type="Self.Systems" Multiplicity="1" />
+    <End Role="Patches" Type="Self.Patches" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Systems">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Patches">
+        <PropertyRef Name="SystemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProcessedFiles_Systems">
+    <End Role="Systems" Type="Self.Systems" Multiplicity="1" />
+    <End Role="ProcessedFiles" Type="Self.ProcessedFiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Systems">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProcessedFiles">
+        <PropertyRef Name="SystemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Radios_Systems">
+    <End Role="Systems" Type="Self.Systems" Multiplicity="1" />
+    <End Role="Radios" Type="Self.Radios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Systems">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Radios">
+        <PropertyRef Name="SystemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Talkgroups_Systems">
+    <End Role="Systems" Type="Self.Systems" Multiplicity="1" />
+    <End Role="Talkgroups" Type="Self.Talkgroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Systems">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Talkgroups">
+        <PropertyRef Name="SystemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TempTowerFrequencies_Towers">
+    <End Role="Towers" Type="Self.Towers" Multiplicity="1" />
+    <End Role="TempTowerFrequencies" Type="Self.TempTowerFrequencies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Towers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TempTowerFrequencies">
+        <PropertyRef Name="TowerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TowerFrequencies_Towers">
+    <End Role="Towers" Type="Self.Towers" Multiplicity="1" />
+    <End Role="TowerFrequencies" Type="Self.TowerFrequencies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Towers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TowerFrequencies">
+        <PropertyRef Name="TowerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TowerFrequencyUsage_Towers">
+    <End Role="Towers" Type="Self.Towers" Multiplicity="1" />
+    <End Role="TowerFrequencyUsage" Type="Self.TowerFrequencyUsage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Towers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TowerFrequencyUsage">
+        <PropertyRef Name="TowerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Towers_Systems">
+    <End Role="Systems" Type="Self.Systems" Multiplicity="1" />
+    <End Role="Towers" Type="Self.Towers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Systems">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Towers">
+        <PropertyRef Name="SystemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="f_DatabaseGetStats" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="_DatabaseGetStats" />
+  <Function Name="f_FindBadTalkgroups" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="_FindBadTalkgroups">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="f_ReseedIDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="_ReseedIDs" />
+  <Function Name="DeleteAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DeleteAllForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="actualSystemID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DeleteTempTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="MergeDeleteTempTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergePatches" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeRadioHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeRadios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeRecords" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeSystems" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTalkgroupHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTalkgroupRadios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTalkgroups" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTowerFrequencyRadios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTowerFrequencyTalkgroups" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTowerFrequencyUsage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTowerRadios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTowers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTowerTalkgroupRadios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="MergeTowerTalkgroups" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="NLog_AddEntry_p" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="machineName" Type="nvarchar" Mode="In" />
+    <Parameter Name="siteName" Type="nvarchar" Mode="In" />
+    <Parameter Name="logged" Type="datetime" Mode="In" />
+    <Parameter Name="level" Type="varchar" Mode="In" />
+    <Parameter Name="userName" Type="nvarchar" Mode="In" />
+    <Parameter Name="message" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="logger" Type="nvarchar" Mode="In" />
+    <Parameter Name="properties" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="serverName" Type="nvarchar" Mode="In" />
+    <Parameter Name="port" Type="nvarchar" Mode="In" />
+    <Parameter Name="url" Type="nvarchar" Mode="In" />
+    <Parameter Name="https" Type="bit" Mode="In" />
+    <Parameter Name="serverAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="remoteAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="callSite" Type="nvarchar" Mode="In" />
+    <Parameter Name="exception" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="PatchesGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetCountForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetCountForSystemSearch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForPatchByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForPatchByDateCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForPatchByDateWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemFromTalkgroupID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemTalkgroupCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemTalkgroupFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemToTalkgroupID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemTowerCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetForSystemTowerFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetSummaryForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesGetSummaryForSystemFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PatchesUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesCheckFileExists" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="fileDate" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesGetCountForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesGetForSystemFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesGetForSystemWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesGetForType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+    <Parameter Name="fileName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+    <Parameter Name="fileDate" Type="datetime2" Mode="In" />
+    <Parameter Name="dateProcessed" Type="datetime2" Mode="In" />
+    <Parameter Name="rowCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProcessedFilesUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="fileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+    <Parameter Name="fileDate" Type="datetime2" Mode="In" />
+    <Parameter Name="dateProcessed" Type="datetime2" Mode="In" />
+    <Parameter Name="rowCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryGetForRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryGetForRadioCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryGetForRadioFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryGetForRadioSearchCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="RadioHistoryUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="RadiosDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetCountForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetDetailFilters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetDetailForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetDetailForSystemActiveFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetDetailForSystemActiveWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetDetailForSystemFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetDetailForSystemWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetForSystemRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosGetSystemNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="fgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="bgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="phaseIISeen" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="RadiosUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="fgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="bgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="phaseIISeen" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SystemsDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SystemsGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SystemsGetCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SystemsGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SystemsGetID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SystemsGetList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SystemsGetListFilters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SystemsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="systemIDDecimal" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="wacn" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="SystemsUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="systemIDDecimal" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="wacn" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryGetForTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryGetForTalkgroupCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryGetForTalkgroupFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupHistoryUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetForSystemDateRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetRadiosForTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetRadiosForTalkgroupByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetRadiosForTalkgroupCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetRadiosForTalkgroupFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetRadiosForTalkgroupWithDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetRadiosForTalkgroupWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetTalkgroupsForRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetTalkgroupsForRadioByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetTalkgroupsForRadioCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosGetTalkgroupsForRadioFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupRadiosUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetCountForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetDetailFilters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetDetailForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetDetailForSystemActiveFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="pageNumber" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetDetailForSystemFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="pageNumber" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetDetailForSystemUnknownFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="pageNumber" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsGetForSystemTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="priority" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="fgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="bgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="encryptionSeen" Type="bit" Mode="In" />
+    <Parameter Name="ignoreEmergencySignal" Type="bit" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="hitCountProgram" Type="int" Mode="In" />
+    <Parameter Name="phaseIISeen" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="TalkgroupsUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="priority" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="fgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="bgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="encryptionSeen" Type="bit" Mode="In" />
+    <Parameter Name="ignoreEmergencySignal" Type="bit" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="hitCountProgram" Type="int" Mode="In" />
+    <Parameter Name="phaseIISeen" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="TempPatchesInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="fromTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="toTalkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TempRadioHistoryInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="fgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="bgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TempSystemsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="systemIDDecimal" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="wacn" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTalkgroupHistoryInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTalkgroupRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTalkgroupsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="priority" Type="int" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenProgram" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenProgramUnix" Type="bigint" Mode="In" />
+    <Parameter Name="fgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="bgColor" Type="nvarchar" Mode="In" />
+    <Parameter Name="encryptionSeen" Type="bit" Mode="In" />
+    <Parameter Name="ignoreEmergencySignal" Type="bit" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="hitCountProgram" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TempTowerFrequenciesInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="channel" Type="nvarchar" Mode="In" />
+    <Parameter Name="usage" Type="nvarchar" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputChannel" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputFrequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputExplicit" Type="int" Mode="In" />
+    <Parameter Name="hitCountProgram" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTowerFrequencyUsageInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="channel" Type="nvarchar" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="cwidCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTowerRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTowersInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="towerNumberHex" Type="nvarchar" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="wacn" Type="nvarchar" Mode="In" />
+    <Parameter Name="controlCapabilities" Type="nvarchar" Mode="In" />
+    <Parameter Name="flavor" Type="nvarchar" Mode="In" />
+    <Parameter Name="callSigns" Type="nvarchar" Mode="In" />
+    <Parameter Name="timeStamp" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTowerTalkgroupRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TempTowerTalkgroupsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sessionID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetForFrequency" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerAllCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerAllFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerNotCurrent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerNotCurrentCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesGetFrequenciesForTowerNotCurrentFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="channel" Type="nvarchar" Mode="In" />
+    <Parameter Name="usage" Type="nvarchar" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputChannel" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputFrequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputExplicit" Type="int" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequenciesUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="channel" Type="nvarchar" Mode="In" />
+    <Parameter Name="usage" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputChannel" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputFrequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputExplicit" Type="int" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyGetSummaryForFrequency" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyRadiosGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyRadiosGetForTowerDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyRadiosGetRadiosForFrequenciesWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyRadiosUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyTalkgroupsGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyTalkgroupsGetForTowerDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyTalkgroupsGetTalkgroupsForFrequenciesWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyTalkgroupsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyTalkgroupsUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageGetForFrequency" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageGetFrequenciesForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageGetFrequenciesForTowerForDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="channel" Type="nvarchar" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="cwidCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerFrequencyUsageUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="channel" Type="nvarchar" Mode="In" />
+    <Parameter Name="frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="cwidCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsDeleteForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsGetForSystemTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="neighborSystemID" Type="int" Mode="In" />
+    <Parameter Name="neighborTowerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsGetForSystemTowerNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="neighborSystemID" Type="int" Mode="In" />
+    <Parameter Name="neighborTowerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsGetNeighborsForSystemTowerFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumberFrom" Type="int" Mode="In" />
+    <Parameter Name="towerNumberTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsGetNeighborsForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="neighborSystemID" Type="int" Mode="In" />
+    <Parameter Name="neighborTowerID" Type="int" Mode="In" />
+    <Parameter Name="neighborTowerNumberHex" Type="nvarchar" Mode="In" />
+    <Parameter Name="neighborChannel" Type="nvarchar" Mode="In" />
+    <Parameter Name="neighborFrequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="neighborTowerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerNeighborsUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="neighborTowerNumberHex" Type="nvarchar" Mode="In" />
+    <Parameter Name="neighborChannel" Type="nvarchar" Mode="In" />
+    <Parameter Name="neighborFrequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="neighborTowerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetDateListForTowerRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetForTowerDateRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetRadiosForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetRadiosForTowerByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetRadiosForTowerCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetRadiosForTowerFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetRadiosForTowerWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetTowerListForRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetTowersForRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetTowersForRadioCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosGetTowersForRadioFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="towerNumberFrom" Type="int" Mode="In" />
+    <Parameter Name="towerNumberTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerRadiosUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowersDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGetCountForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGetForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGetForSystemActiveFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="towerNumberFrom" Type="int" Mode="In" />
+    <Parameter Name="towerNumberTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGetForSystemActiveWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGetForSystemFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="towerNumberFrom" Type="int" Mode="In" />
+    <Parameter Name="towerNumberTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGetForSystemTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersGetForSystemWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowersInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="towerNumberHex" Type="nvarchar" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="wacn" Type="nvarchar" Mode="In" />
+    <Parameter Name="controlCapabilities" Type="nvarchar" Mode="In" />
+    <Parameter Name="flavor" Type="nvarchar" Mode="In" />
+    <Parameter Name="callSigns" Type="nvarchar" Mode="In" />
+    <Parameter Name="timeStamp" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowersUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="towerNumberHex" Type="nvarchar" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+    <Parameter Name="hitCount" Type="int" Mode="In" />
+    <Parameter Name="wacn" Type="nvarchar" Mode="In" />
+    <Parameter Name="controlCapabilities" Type="nvarchar" Mode="In" />
+    <Parameter Name="flavor" Type="nvarchar" Mode="In" />
+    <Parameter Name="callSigns" Type="nvarchar" Mode="In" />
+    <Parameter Name="timeStamp" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesDeleteForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesGetForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesGetForTowerTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="tableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="tableID" Type="int" Mode="In" />
+    <Parameter Name="baseFrequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="spacing" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputOffset" Type="nvarchar" Mode="In" />
+    <Parameter Name="assumedConfirmed" Type="nvarchar" Mode="In" />
+    <Parameter Name="bandwidth" Type="nvarchar" Mode="In" />
+    <Parameter Name="slots" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTablesUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="baseFrequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="spacing" Type="nvarchar" Mode="In" />
+    <Parameter Name="inputOffset" Type="nvarchar" Mode="In" />
+    <Parameter Name="assumedConfirmed" Type="nvarchar" Mode="In" />
+    <Parameter Name="bandwidth" Type="nvarchar" Mode="In" />
+    <Parameter Name="slots" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetForTowerDateRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetRadiosForTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetRadiosForTalkgroupWithDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetRadiosForTowerTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetRadiosForTowerTalkgroupFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="radioIDFrom" Type="int" Mode="In" />
+    <Parameter Name="radioIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetTalkgroupsForRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetTalkgroupsForRadioWithDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetTalkgroupsForTowerRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetTalkgroupsForTowerRadioFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosGetTowersForTalkgroupRadio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="radioID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupRadiosUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsDeleteForSystem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetDateListForTowerTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetForTowerImport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetForTowerImportDateRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTalkgroupsForTower" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTalkgroupsForTowerByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTalkgroupsForTowerCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTalkgroupsForTowerFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="talkgroupIDFrom" Type="int" Mode="In" />
+    <Parameter Name="talkgroupIDTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTowerListForTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTowersForTalkgroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTowersForTalkgroupCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsGetTowersForTalkgroupFiltersWithPaging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="nvarchar" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="searchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="dateFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="dateTo" Type="datetime2" Mode="In" />
+    <Parameter Name="towerNumberFrom" Type="int" Mode="In" />
+    <Parameter Name="towerNumberTo" Type="int" Mode="In" />
+    <Parameter Name="firstSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="firstSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenFrom" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeenTo" Type="datetime2" Mode="In" />
+    <Parameter Name="sortField" Type="nvarchar" Mode="In" />
+    <Parameter Name="sortDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="row" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="systemID" Type="int" Mode="In" />
+    <Parameter Name="towerNumber" Type="int" Mode="In" />
+    <Parameter Name="talkgroupID" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <Function Name="TowerTalkgroupsUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime2" Mode="In" />
+    <Parameter Name="affiliationCount" Type="int" Mode="In" />
+    <Parameter Name="deniedCount" Type="int" Mode="In" />
+    <Parameter Name="voiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="emergencyVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="encryptedVoiceGrantCount" Type="int" Mode="In" />
+    <Parameter Name="dataCount" Type="int" Mode="In" />
+    <Parameter Name="privateDataCount" Type="int" Mode="In" />
+    <Parameter Name="alertCount" Type="int" Mode="In" />
+    <Parameter Name="firstSeen" Type="datetime2" Mode="In" />
+    <Parameter Name="lastSeen" Type="datetime2" Mode="In" />
+  </Function>
+  <EntityContainer Name="TrunkedRadioInfoModelStoreContainer">
+    <EntitySet Name="NLog" EntityType="Self.NLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patches" EntityType="Self.Patches" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProcessedFiles" EntityType="Self.ProcessedFiles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RadioHistories" EntityType="Self.RadioHistories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RadioHistory" EntityType="Self.RadioHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Radios" EntityType="Self.Radios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Systems" EntityType="Self.Systems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TalkgroupHistories" EntityType="Self.TalkgroupHistories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TalkgroupHistory" EntityType="Self.TalkgroupHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TalkgroupRadios" EntityType="Self.TalkgroupRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Talkgroups" EntityType="Self.Talkgroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempPatches" EntityType="Self.TempPatches" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempRadioHistory" EntityType="Self.TempRadioHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempRadios" EntityType="Self.TempRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempSystems" EntityType="Self.TempSystems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTalkgroupHistory" EntityType="Self.TempTalkgroupHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTalkgroupRadios" EntityType="Self.TempTalkgroupRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTalkgroups" EntityType="Self.TempTalkgroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowerFrequencies" EntityType="Self.TempTowerFrequencies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowerFrequencyRadios" EntityType="Self.TempTowerFrequencyRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowerFrequencyTalkgroups" EntityType="Self.TempTowerFrequencyTalkgroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowerFrequencyUsage" EntityType="Self.TempTowerFrequencyUsage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowerRadios" EntityType="Self.TempTowerRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowers" EntityType="Self.TempTowers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowerTalkgroupRadios" EntityType="Self.TempTowerTalkgroupRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TempTowerTalkgroups" EntityType="Self.TempTowerTalkgroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerFrequencies" EntityType="Self.TowerFrequencies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerFrequencyRadios" EntityType="Self.TowerFrequencyRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerFrequencyTalkgroups" EntityType="Self.TowerFrequencyTalkgroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerFrequencyUsage" EntityType="Self.TowerFrequencyUsage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerNeighbors" EntityType="Self.TowerNeighbors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerRadios" EntityType="Self.TowerRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Towers" EntityType="Self.Towers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerTables" EntityType="Self.TowerTables" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerTalkgroupRadios" EntityType="Self.TowerTalkgroupRadios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TowerTalkgroups" EntityType="Self.TowerTalkgroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="database_firewall_rules" EntityType="Self.database_firewall_rules" store:Type="Views" store:Schema="sys">
+      <DefiningQuery>SELECT 
+    [database_firewall_rules].[id] AS [id], 
+    [database_firewall_rules].[name] AS [name], 
+    [database_firewall_rules].[start_ip_address] AS [start_ip_address], 
+    [database_firewall_rules].[end_ip_address] AS [end_ip_address], 
+    [database_firewall_rules].[create_date] AS [create_date], 
+    [database_firewall_rules].[modify_date] AS [modify_date]
+    FROM [sys].[database_firewall_rules] AS [database_firewall_rules]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Patches_Systems" Association="Self.FK_Patches_Systems">
+      <End Role="Systems" EntitySet="Systems" />
+      <End Role="Patches" EntitySet="Patches" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProcessedFiles_Systems" Association="Self.FK_ProcessedFiles_Systems">
+      <End Role="Systems" EntitySet="Systems" />
+      <End Role="ProcessedFiles" EntitySet="ProcessedFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Radios_Systems" Association="Self.FK_Radios_Systems">
+      <End Role="Systems" EntitySet="Systems" />
+      <End Role="Radios" EntitySet="Radios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Talkgroups_Systems" Association="Self.FK_Talkgroups_Systems">
+      <End Role="Systems" EntitySet="Systems" />
+      <End Role="Talkgroups" EntitySet="Talkgroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TempTowerFrequencies_Towers" Association="Self.FK_TempTowerFrequencies_Towers">
+      <End Role="Towers" EntitySet="Towers" />
+      <End Role="TempTowerFrequencies" EntitySet="TempTowerFrequencies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TowerFrequencies_Towers" Association="Self.FK_TowerFrequencies_Towers">
+      <End Role="Towers" EntitySet="Towers" />
+      <End Role="TowerFrequencies" EntitySet="TowerFrequencies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TowerFrequencyUsage_Towers" Association="Self.FK_TowerFrequencyUsage_Towers">
+      <End Role="Towers" EntitySet="Towers" />
+      <End Role="TowerFrequencyUsage" EntitySet="TowerFrequencyUsage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Towers_Systems" Association="Self.FK_Towers_Systems">
+      <End Role="Systems" EntitySet="Systems" />
+      <End Role="Towers" EntitySet="Towers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

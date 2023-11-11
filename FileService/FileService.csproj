@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Graph" Version="5.13.0" />
+    <PackageReference Include="NLog" Version="5.2.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj" />
+    <ProjectReference Include="..\ProcessedFileService\ProcessedFileService.csproj" />
+    <ProjectReference Include="..\RadioHistoryService\RadioHistoryService.csproj" />
+    <ProjectReference Include="..\RadioService\RadioService.csproj" />
+    <ProjectReference Include="..\SystemInfoService\SystemInfoService.csproj" />
+    <ProjectReference Include="..\TalkgroupHistoryService\TalkgroupHistoryService.csproj" />
+    <ProjectReference Include="..\TalkgroupRadioService\TalkgroupRadioService.csproj" />
+    <ProjectReference Include="..\TalkgroupService\TalkgroupService.csproj" />
+    <ProjectReference Include="..\TowerFrequencyRadioService\TowerFrequencyRadioService.csproj" />
+    <ProjectReference Include="..\TowerFrequencyService\TowerFrequencyService.csproj" />
+    <ProjectReference Include="..\TowerFrequencyTalkgroupService\TowerFrequencyTalkgroupService.csproj" />
+    <ProjectReference Include="..\TowerFrequencyUsageService\TowerFrequencyUsageService.csproj" />
+    <ProjectReference Include="..\TowerNeighborService\TowerNeighborService.csproj" />
+    <ProjectReference Include="..\TowerRadioService\TowerRadioService.csproj" />
+    <ProjectReference Include="..\TowerService\TowerService.csproj" />
+    <ProjectReference Include="..\TowerTableService\TowerTableService.csproj" />
+    <ProjectReference Include="..\TowerTalkgroupRadioService\TowerTalkgroupRadioService.csproj" />
+    <ProjectReference Include="..\TowerTalkgroupService\TowerTalkgroupService.csproj" />
+  </ItemGroup>
+
+</Project>

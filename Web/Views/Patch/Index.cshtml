@@ -1,0 +1,75 @@
+﻿@using PatchService
+
+@model PatchViewModel
+
+<div id="SystemInfoDiv" class="card">
+    <div class="card-header">
+        <h3>
+            <a href="@Url.Action("Index", "System", new {id = ViewBag.SystemID})">System @ViewBag.SystemID (@ViewBag.SystemName)</a>
+        </h3>
+        <h3>
+            From <a href="@Url.Action("Index", "Talkgroup", new {systemID = ViewBag.SystemID, talkgroupID = Model.FromTalkgroupID})">@Model.FromTalkgroupID (@Model.FromTalkgroupName)</a>
+            to <a href="@Url.Action("Index", "Talkgroup", new {systemID = ViewBag.SystemID, talkgroupID = Model.ToTalkgroupID})">@Model.ToTalkgroupID (@Model.ToTalkgroupName)</a>
+        </h3>
+    </div>
+</div>
+<div class="card">
+    <div class="row">
+        <div class="col-md-4">
+            <strong>First Seen</strong> : @Model.FirstSeenText
+        </div>
+        <div class="col-md-4">
+            <strong>Last Seen</strong> : @Model.LastSeenText
+        </div>
+        <div class="col-md-4">
+            <strong>Hit Count</strong> : @Model.HitCountText
+        </div>
+    </div>
+</div>
+<div class="panel panel-primary" style="height: 680px;">
+    <div class="panel-heading">
+        <h4>Patches (<span id="PatchesCountSpan"></span>)</h4>
+    </div>
+    <div class="panel-body" style="height: 630px;">
+        @(Html.Kendo().Grid<PatchDatesViewModel>()
+            .Name("PatchesGrid")
+            .Columns(column =>
+            {
+                column.Bound(col => col.TowerNumber)
+                    .Width(100);
+                column.Bound(col => col.TowerName);
+                column.Bound(col => col.Date)
+                    .Format("{0:MM-dd-yyyy HH:mm}")
+                    .Width(150);
+                column.Bound(col => col.HitCount)
+                    .Format("{0:#,##0}")
+                    .Width(100);
+            })
+            .HtmlAttributes(new { style = "height: 550px;" })
+            .Sortable(sort =>
+            {
+                sort.SortMode(GridSortMode.SingleColumn);
+                sort.AllowUnsort(false);
+            })
+            .Pageable()
+            .Selectable(selectable => selectable
+                .Mode(GridSelectionMode.Single)
+                .Type(GridSelectionType.Row))
+            .Events(events => events.DataBound("patchesDataBound"))
+            .DataSource(dataSource =>
+                dataSource.Ajax()
+                    .PageSize(15)
+                    .ServerOperation(true)
+                    .Read(read => read.Action("GetPatches", "Patch", new { systemID = ViewBag.SystemID, fromTalkgroupID = ViewBag.FromTalkgroupID, toTalkgroupID = ViewBag.ToTalkgroupID })))
+        )
+    </div>
+</div>
+
+<script type="text/javascript">
+    var patchesDataBound = function (arg) {
+        $("#PatchesCountSpan")
+            .html($("#PatchesGrid")
+                .data("kendoGrid")
+                .dataSource.total());
+    };
+</script>

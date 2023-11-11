@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = TowerFrequencyService.Tests.Core
+build_property.ProjectDir = C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyService.Tests.Core\

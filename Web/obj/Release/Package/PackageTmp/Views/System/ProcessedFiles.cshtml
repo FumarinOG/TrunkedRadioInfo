@@ -1,0 +1,77 @@
+﻿@using ProcessedFileService
+@using SystemDetailService
+
+@model SystemDetailViewModel
+
+@(Html.Kendo().Grid<ProcessedFileViewModel>()
+    .Name("ProcessedFilesGrid")
+    .Columns(column =>
+    {
+        column.Bound(col => col.FileName)
+            .Filterable(filter => filter.Extra(false));
+        column.Bound(col => col.DateProcessed)
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(180)
+            .Filterable(true);
+        column.Bound(col => col.RowCount)
+            .Title("Log Rows")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+    })
+    .ToolBar(toolbar =>
+    {
+        toolbar.Template(@<text>
+                            <div style="vertical-align: middle;">
+                                <div class="toolbar-export">
+                                    <a href="#" class="k-button k-button-icontext k-grid-excel" title="Export data to Excel">
+                                        <span class="k-icon k-i-excel"></span>Export
+                                    </a>
+                                </div>
+                            </div>
+                        </text>);
+    })
+    .Filterable(filter =>
+    {
+        filter.Enabled(true);
+        filter.Operators(operators =>
+        {
+            operators.ForNumber(number =>
+                number.Clear()
+                    .IsGreaterThanOrEqualTo(">=")
+                    .IsLessThanOrEqualTo("<="));
+
+            operators.ForString(str =>
+                str.Clear()
+                    .Contains("Contains"));
+
+            operators.ForDate(date =>
+                date.Clear()
+                    .IsGreaterThanOrEqualTo(">=")
+                    .IsLessThanOrEqualTo("<="));
+        });
+    })
+    .Scrollable(scroll => scroll.Height(575))
+    .Sortable(sort =>
+        sort.SortMode(GridSortMode.SingleColumn)
+            .AllowUnsort(false))
+    .Pageable(pageable =>
+        pageable.Input(true)
+            .Refresh(true))
+    .Selectable(selectable =>
+        selectable.Mode(GridSelectionMode.Single)
+            .Type(GridSelectionType.Row))
+    .Events(events =>
+        events.Change("Grids.ProcessedFileChange")
+            .FilterMenuInit("Filters.ProcessedFileFilterFormats"))
+    .Excel(excel =>
+        excel.AllPages(true)
+            .Filterable(true)
+            .FileName($"Patches-{Model.SystemID}.xlsx"))
+    .DataSource(dataSource =>
+        dataSource.Ajax()
+            .PageSize(15)
+            .ServerOperation(true)
+            .Sort(sort => sort.Add("DateProcessed").Descending())
+            .Read(read => read.Action("GetProcessedFiles", "System")
+                .Data("SystemSearches.GetProcessedFileSearchData"))))

@@ -1,0 +1,72 @@
+﻿@using TowerService;
+
+@model TowerDataViewModel
+
+<div id="SystemInfoDiv" class="card">
+    <div class="card-header">
+        <h3>
+            <a href="@Url.Action("Index", "System", new {id = Model.SystemID})">System @Model.SystemID </a> (@Model.SystemName) / Tower @Model.TowerData.TowerNumber (@Model.TowerData.TowerName)
+        </h3>
+    </div>
+</div>
+@if ((Model.SearchData.SearchData != null) && Model.SearchData.SearchData.IsFiltered)
+{
+    @Html.Partial("_FilterDetail", Model.SearchData)
+}
+<div class="row">
+    <div class="col">
+        @(Html.Kendo().TabStrip()
+            .Name("TowerTabs")
+            .Items(tabStrip =>
+            {
+                tabStrip.Add()
+                    .Text("Frequencies")
+                    .Selected(true)
+                    .LoadContentFrom("Frequencies", "Tower", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber });
+                tabStrip.Add()
+                    .Text("Neighbors")
+                    .LoadContentFrom("Neighbors", "Tower", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber });
+                tabStrip.Add()
+                    .Text("Talkgroups")
+                    .LoadContentFrom("Talkgroups", "Tower", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber });
+                tabStrip.Add()
+                    .Text("Radios")
+                    .LoadContentFrom("Radios", "Tower", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber });
+                tabStrip.Add()
+                    .Text("Patches")
+                    .LoadContentFrom("Patches", "Tower", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber });
+            })
+            .HtmlAttributes(new { @class = "tab-strip" }))
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var _systemID = "@Model.SystemID",
+            _towerNumber = "@Model.TowerNumber",
+            _viewFrequencyURL = "@Url.Action("Index", "Frequency")",
+            _viewTalkgroupURL = "@Url.Action("Index", "Talkgroup")",
+            _viewRadioURL = "@Url.Action("Index", "Radio")",
+            _searchData = Common.GetSearchData("@Model.SearchData.SearchDataEncoded");
+
+        function TowerFrequencyDropDownListChange() {
+            $("#FrequenciesGrid").data("kendoGrid").dataSource.read();
+        }
+
+        function GetFrequencySearchData() {
+
+            return {
+                frequencyType: $("#FrequencyTypeDropDownList").data("kendoDropDownList").value(),
+                searchData: Common.GetSearchDataEncoded(_searchData)
+            }
+        }
+
+        function GetNeighborSearchData() {
+
+            return {
+                searchData: Common.GetSearchDataEncoded(_searchData)
+            }
+        }
+    </script>
+}

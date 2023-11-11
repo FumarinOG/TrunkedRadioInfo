@@ -1,0 +1,148 @@
+﻿@using RadioService
+@using SystemDetailService
+
+@model SystemDetailViewModel
+
+@(Html.Kendo().Grid<RadioViewModel>()
+    .Name("RadiosGrid")
+    .Columns(column =>
+    {
+        column.Bound(col => col.RadioID)
+            .Title("ID")
+            .Width(100)
+            .Filterable(true);
+        column.Bound(col => col.RadioName)
+            .Filterable(filter => filter.Extra(false));
+        column.Bound(col => col.AffiliationCount)
+            .Title("Affiliations")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.VoiceCount)
+            .Title("Voice")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.EncryptedCount)
+            .Title("Encrypted")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.DeniedCount)
+            .Title("Denied")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.DataCount)
+            .Title("Data")
+            .Format("{0:#,##0}")
+            .Width(100)
+            .Filterable(false);
+        column.Bound(col => col.FirstSeen)
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+        column.Bound(col => col.LastSeen)
+            .Format("{0:MM-dd-yyyy HH:mm}")
+            .Width(150)
+            .Filterable(true);
+    })
+    .ToolBar(toolbar =>
+    {
+        toolbar.Template(@<text>
+                            <div class="toolbar-category">
+                                @(Html.Kendo().DropDownList()
+                                    .Name("RadioViewDropDownList")
+                                    .Items(dropDown =>
+                                    {
+                                        dropDown.Add().Text("All").Value("All");
+                                        dropDown.Add().Text("Active Only").Value("ActiveOnly");
+                                    })
+                                    .HtmlAttributes(new { @class = "active-dropdown" })
+                                    .Events(events => events.Change("Grids.RadioViewDropDownListChange")))
+                            </div>
+                            <div class="toolbar-category">
+                                <label class="category-label">Data Dates</label>
+                                @(Html.Kendo().DatePicker()
+                                    .Name("RadioDateFromPicker")
+                                    .Format("MM-dd-yyyy")
+                                    .HtmlAttributes(new { @class = "grid-datepicker" })
+                                    .Events(events => events.Change("Grids.RadioDateFromChange")))
+                                <span> to </span>
+                                @(Html.Kendo().DatePicker()
+                                    .Name("RadioDateToPicker")
+                                    .Format("MM-dd-yyyy")
+                                    .HtmlAttributes(new { @class = "grid-datepicker" }))
+                            </div>
+                            <div class="toolbar-category">
+                                <a href="#" id="RadioFilterAnchor" class="k-button k-button-icontext" title="Apply filter">
+                                    <span class="k-icon k-i-filter"></span>Filter
+                                </a>
+                            </div>
+                            <div class="toolbar-export">
+                                <a href="#" class="k-button k-button-icontext k-grid-excel" title="Export data to Excel">
+                                    <span class="k-icon k-i-excel"></span>Export
+                                </a>
+                            </div>
+                        </text>);
+    })
+    .Filterable(filter =>
+    {
+        filter.Enabled(true);
+        filter.Operators(operators =>
+        {
+            operators.ForNumber(number =>
+            {
+                number.Clear();
+                number.IsGreaterThanOrEqualTo(">=");
+                number.IsLessThanOrEqualTo("<=");
+            });
+
+            operators.ForString(str =>
+            {
+                str.Clear();
+                str.Contains("Contains");
+            });
+
+            operators.ForDate(date =>
+            {
+                date.Clear();
+                date.IsGreaterThanOrEqualTo(">=");
+                date.IsLessThanOrEqualTo("<=");
+            });
+        });
+    })
+    .Scrollable(scroll => scroll.Height(575))
+    .Sortable(sort =>
+        sort.SortMode(GridSortMode.SingleColumn)
+            .AllowUnsort(false))
+    .Pageable(pageable =>
+        pageable.Input(true)
+            .Refresh(true))
+    .Selectable(selectable =>
+        selectable.Mode(GridSelectionMode.Single)
+            .Type(GridSelectionType.Row))
+    .Events(events =>
+        events.Change("Grids.RadioChange")
+            .FilterMenuInit("Filters.RadioFilterFormats"))
+    .Excel(excel =>
+        excel.AllPages(true)
+            .Filterable(true)
+            .FileName($"Radios-{Model.SystemID}.xlsx"))
+    .DataSource(dataSource =>
+        dataSource.Ajax()
+            .PageSize(15)
+            .ServerOperation(true)
+            .Sort(sort => sort.Add("RadioID").Ascending())
+            .Read(read => read.Action("GetRadios", "System")
+                .Data("SystemSearches.GetRadioSearchData"))))
+
+@section scripts
+{
+    <script type="text/javascript">
+        $("#RadioFilterAnchor").on("click",
+            function() {
+                $("#RadiosGrid").data("kendoGrid").dataSource.read();
+            });
+    </script>
+}

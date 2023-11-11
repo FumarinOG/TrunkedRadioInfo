@@ -1,0 +1,95 @@
+﻿@using TalkgroupService
+
+@model TalkgroupDataViewModel
+
+<div id="SystemInfoDiv" class="card">
+    <div class="card-header">
+        <h3>
+            <a href="@Url.Action("Index", "System", new {id = Model.SystemID})">System @Model.SystemID (@Model.SystemName)</a> / Talkgroup @Model.TalkgroupData.TalkgroupID (@Model.TalkgroupData.TalkgroupName)
+        </h3>
+
+    </div>
+</div>
+@if ((Model.SearchData.SearchData != null) && Model.SearchData.SearchData.IsFiltered)
+{
+    @Html.Partial("_FilterDetail", Model.SearchData)
+}
+<div class="card">
+    <div class="row">
+        <div class="col-md-4">
+            <strong>First Seen</strong> : @Model.TalkgroupData.FirstSeenText
+        </div>
+        <div class="col-md-4">
+            <strong>Last Seen</strong> : @Model.TalkgroupData.LastSeenText
+        </div>
+        <div class="col-md-4">
+            <strong>Encryption Seen?</strong> : @Model.TalkgroupData.EncryptionSeen
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Affiliations</strong> : @Model.TalkgroupData.AffiliationCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Denied</strong> : @Model.TalkgroupData.DeniedCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Voice Grants</strong> : @Model.TalkgroupData.VoiceCountText
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Emergency</strong> : @Model.TalkgroupData.EmergencyCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Encrypted</strong> : @Model.TalkgroupData.EncryptedCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Phase II Seen?</strong> : @Model.TalkgroupData.PhaseIISeenText
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Patches</strong> : @Model.TalkgroupData.PatchCountText
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        @(Html.Kendo().TabStrip()
+            .Name("TalkgroupTabs")
+            .Items(tabStrip =>
+            {
+                tabStrip.Add()
+                    .Text("Radios")
+                    .Selected(true)
+                    .LoadContentFrom("Radios", "Talkgroup", new { systemID = Model.SystemID, talkgroupID = Model.TalkgroupID });
+                tabStrip.Add()
+                    .Text("Towers")
+                    .LoadContentFrom("Towers", "Talkgroup", new { systemID = Model.SystemID, talkgroupID = Model.TalkgroupID });
+                tabStrip.Add()
+                    .Text("Patches")
+                    .LoadContentFrom("Patches", "Talkgroup", new { systemID = Model.SystemID, talkgroupID = Model.TalkgroupID });
+                tabStrip.Add()
+                    .Text("History")
+                    .LoadContentFrom("History", "Talkgroup", new { systemID = Model.SystemID, talkgroupID = Model.TalkgroupID });
+                tabStrip.Add()
+                    .Text("Radios by Tower")
+                    .LoadContentFrom("RadiosByTower", "Talkgroup", new { systemID = Model.SystemID, talkgroupID = Model.TalkgroupID });
+            })
+            .HtmlAttributes(new { @class = "tab-strip" }))
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var _systemID = "@Model.SystemID",
+            _viewRadioURL = "@Url.Action("Index", "Radio")",
+            _viewTowerURL = "@Url.Action("Index", "Tower")",
+            _viewPatchURL = "@Url.Action("Index", "Patch")",
+            _searchData = Common.GetSearchData("@Model.SearchData.SearchDataEncoded");
+    </script>
+}
+
+@Scripts.Render("~/Scripts/web-talkgroup.js")

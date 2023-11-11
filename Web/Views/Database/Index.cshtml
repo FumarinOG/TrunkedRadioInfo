@@ -1,0 +1,71 @@
+﻿@using DatabaseService
+
+@model DatabaseStatsViewModel
+
+<div class="row">
+    <div class="col-sm-3">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2" class="text-center">Database Statistics</th>
+                </tr>
+            </thead>
+            <tr>
+                <th scope="row">Processed Files</th>
+                <td>@Model.ProcessedFilesCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Processed Rows</th>
+                <td>@Model.RowCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Systems</th>
+                <td>@Model.SystemsCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Talkgroups</th>
+                <td>@Model.TalkgroupsCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Talkgroup History</th>
+                <td>@Model.TalkgroupHistoryCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Radios</th>
+                <td>@Model.RadiosCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Radio History</th>
+                <td>@Model.RadioHistoryCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Towers</th>
+                <td>@Model.TowersCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Tower Frequencies</th>
+                <td>@Model.TowerFrequenciesCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Tower Frequency Usage</th>
+                <td>@Model.TowerFrequencyUsageCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Tower Talkgroups</th>
+                <td>@Model.TowerTalkgroupsCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Tower Radios</th>
+                <td>@Model.TowerRadiosCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Tower Frequency Talkgroups</th>
+                <td>@Model.TowerFrequencyTalkgroupsCountText</td>
+            </tr>
+            <tr>
+                <th scope="row">Tower Frequency Radios</th>
+                <td>@Model.TowerFrequencyRadiosCountText</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿@using TowerFrequencyService
+
+@model TowerFrequencyDataViewModel
+
+<div id="SystemInfoDiv" class="card">
+    <div class="card-header">
+        <h3>
+            <a href="@Url.Action("Index", "System", new { id = Model.SystemID })">System @Model.SystemID (@Model.SystemName)</a> / <a href="@Url.Action("Index", "Tower", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber })">Tower @Model.TowerNumber (@Model.TowerName)</a> / Frequency @Model.TowerFrequencyData.Frequency
+        </h3>
+
+    </div>
+</div>
+@if ((Model.SearchData.SearchData != null) && Model.SearchData.SearchData.IsFiltered)
+{
+    @Html.Partial("_FilterDetail", Model.SearchData)
+}
+<div class="card">
+    <div class="row">
+        <div class="col-md-4">
+            <strong>First Seen</strong> : @Model.TowerFrequencyData.FirstSeenText
+        </div>
+        <div class="col-md-4">
+            <strong>Last Seen</strong> : @Model.TowerFrequencyData.LastSeenText
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Affiliations</strong> : @Model.TowerFrequencyData.AffiliationCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Denied</strong> : @Model.TowerFrequencyData.DeniedCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Voice Grants</strong> : @Model.TowerFrequencyData.VoiceCountText
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Emergency</strong> : @Model.TowerFrequencyData.EmergencyCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Encrypted</strong> : @Model.TowerFrequencyData.EncryptedCountText
+        </div>
+        <div class="col-md-4">
+            <strong>Data</strong> : @Model.TowerFrequencyData.DataCountText
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        @(Html.Kendo().TabStrip()
+            .Name("FrequencyTabs")
+            .Items(tabStrip =>
+            {
+                tabStrip.Add()
+                    .Text("Talkgroups")
+                    .Selected(true)
+                    .LoadContentFrom("Talkgroups", "Frequency", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber, frequency = Model.TowerFrequencyData.Frequency });
+                tabStrip.Add()
+                    .Text("Radios")
+                    .LoadContentFrom("Radios", "Frequency", new { systemID = Model.SystemID, towerNumber = Model.TowerNumber, frequency = Model.TowerFrequencyData.Frequency });
+            })
+            .HtmlAttributes(new { @class = "tab-strip" }))
+    </div>
+</div>
+@section scripts
+{
+    <script type="text/javascript">
+        var _systemID = "@Model.SystemID",
+            _towerNumber = "@Model.TowerNumber",
+            _viewTalkgroupURL = "@Url.Action("Index", "Talkgroup")",
+            _viewRadioURL = "@Url.Action("Index", "Radio")",
+            _searchData = Common.GetSearchData("@Model.SearchData.SearchDataEncoded");
+    </script>
+}

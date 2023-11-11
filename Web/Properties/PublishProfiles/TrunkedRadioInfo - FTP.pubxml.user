@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAki1VXKjt0EGqZEUaTFmFzAAAAAACAAAAAAAQZgAAAAEAACAAAADn4TxG0g686ZeCPyO97Ga8KTach5fYCvuk7dwsaVdUrQAAAAAOgAAAAAIAACAAAADNfhxJxu0Tl4x91MJRnZx6eBV+9ZVbiqKf6+yuW61FsiAAAACoPi/Cx97g/syW6gjPrgXUdw1+KA3tWbk+2aP874JVfUAAAABb5zrIvipJcPphiG2wlYg6JQUQg+S1rx0nC4uD8ZN5yLujATs1MyD5I13un/YP8ZQDLvKEPTDuaZaZezqBsTLH</EncryptedPassword>
+    <_PublishTargetUrl>ftp://waws-prod-dm1-029.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+    <History>False|2023-06-21T15:53:36.2037487Z;False|2023-06-21T09:06:33.7180423-05:00;False|2023-06-21T08:48:55.4902727-05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
