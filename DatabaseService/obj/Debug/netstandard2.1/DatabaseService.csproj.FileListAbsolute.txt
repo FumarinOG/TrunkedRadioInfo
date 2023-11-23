@@ -23,3 +23,11 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DatabaseService\obj\Debug\netstand
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.dll
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DatabaseService\obj\Debug\netstandard2.1\DatabaseService.pdb

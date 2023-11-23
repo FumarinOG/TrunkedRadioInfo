@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wgheLTaYmHJ2K8PVHQABtVapjWRqvMf4/O9QaWJHfLY2uNYgwldSw/rOmQJEqPHtpiN7Lv5Q68A29Z4FhjPb9g==",
+  "dgSpecHash": "LyYghWkHnJodcP3kUbZ4/Kf1jsoHy5dwWlFaKYsrC37grsQWiMv5Bl5xfHxG/gotsvSj6Tb7m+Tz5rp26+WwYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\SearchDataService\\SearchDataService.csproj",
+  "projectFilePath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SearchDataService\\SearchDataService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mike\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -11,7 +11,7 @@
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.6\\nlog.5.2.6.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

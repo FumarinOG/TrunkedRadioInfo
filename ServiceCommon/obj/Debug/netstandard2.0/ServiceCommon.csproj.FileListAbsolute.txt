@@ -43,3 +43,4 @@ C:\Users\mike\Source\Repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netst
 C:\Users\mike\Source\Repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.csproj.CopyComplete
 C:\Users\mike\Source\Repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.dll
 C:\Users\mike\Source\Repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.sourcelink.json

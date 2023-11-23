@@ -23,3 +23,9 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyTalkgroupService\obj
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.1\TowerFrequencyTalkgroupService.sourcelink.json

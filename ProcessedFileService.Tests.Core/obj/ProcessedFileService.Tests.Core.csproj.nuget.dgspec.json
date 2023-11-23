@@ -1,54 +1,54 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj": {}
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "projectName": "DataAccessLibrary",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "frameworks": {
-          "net48": {
+          "net481": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net48": {}
+        "net481": {}
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
         "projectName": "DataLibrary",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
         "frameworks": {
-          "net48": {
+          "net481": {
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "net48": {}
+        "net481": {}
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
         "projectName": "ObjectLibrary",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\obj\\",
+        "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,7 +85,7 @@
             },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.6, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -103,16 +103,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj",
         "projectName": "ProcessedFileService.Tests.Core",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\ProcessedFileService.Tests.Core.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService.Tests.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -131,8 +131,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj"
               }
             }
           }
@@ -153,11 +153,11 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.6.2, )"
+              "version": "[17.8.0, )"
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.18.4, )"
+              "version": "[4.20.69, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -165,13 +165,13 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.6.2, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.5, )"
+              "version": "[2.5.4, )"
             }
           },
           "imports": [
@@ -190,16 +190,16 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
         "projectName": "ProcessedFileService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\obj\\",
         "projectStyle": "PackageReference",
@@ -218,11 +218,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -259,16 +259,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
         "projectName": "ServiceCommon",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\obj\\",
         "projectStyle": "PackageReference",
@@ -287,11 +287,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
               }
             }
           }
@@ -318,7 +318,7 @@
             },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.6, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -336,7 +336,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

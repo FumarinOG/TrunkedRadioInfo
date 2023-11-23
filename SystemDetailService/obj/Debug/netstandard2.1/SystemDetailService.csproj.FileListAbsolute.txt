@@ -23,3 +23,11 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SystemDetailService\obj\Debug\nets
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.dll
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\obj\Debug\netstandard2.1\SystemDetailService.pdb

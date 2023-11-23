@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "20eF4eIXHI1rPe4/J7dzIVSHyjk29oN4uhMGbK8tWq59bX+M3c71g7yJCgth9sYNQMXsj3S1KBW3z2nLK9Pv/g==",
+  "dgSpecHash": "zUvj/Hjz1TcLW02tw57pnmdLU2EHmZrwcHRFx4VRRw4m8Wx7YF3X/WqKMxeFXJjx4aVUzpYl7LPr4epETzPZTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj",
+  "projectFilePath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mike\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.6\\nlog.5.2.6.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"

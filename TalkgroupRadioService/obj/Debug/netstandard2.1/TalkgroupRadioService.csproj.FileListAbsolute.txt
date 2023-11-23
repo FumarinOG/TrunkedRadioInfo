@@ -23,3 +23,9 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TalkgroupRadioService\obj\Debug\ne
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupRadioService\obj\Debug\netstandard2.1\TalkgroupRadioService.sourcelink.json

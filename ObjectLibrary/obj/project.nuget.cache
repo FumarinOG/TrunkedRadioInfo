@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ap8xZ1oyH55ea2SMQzGnT2F7YCB+rCGoBF/2tfTnWknRZBQce6AOVms3heQD4SBQEkxsz7edPxr+RReVSeOkMA==",
+  "dgSpecHash": "8U9g/eOYL6NyqA0E0P3kScHx6sZiMcCEdOl5zOzLMlYS1KAn/7huZ+wbt69I/UwbLYv9SBOfMnhz8zKFLknQug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
+  "projectFilePath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.6\\nlog.5.2.6.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"
   ],
   "logs": []

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TowerFrequencyRadioService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10f66ade0ccfe67f9214e080f9ae47a597b5bd24")]
 [assembly: System.Reflection.AssemblyProductAttribute("TowerFrequencyRadioService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TowerFrequencyRadioService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

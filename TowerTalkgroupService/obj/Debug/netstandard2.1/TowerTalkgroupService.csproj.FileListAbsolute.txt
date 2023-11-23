@@ -25,3 +25,9 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerTalkgroupService\bin\Debug\ne
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerTalkgroupService\bin\Debug\netstandard2.1\TowerTalkgroupService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerTalkgroupService\bin\Debug\netstandard2.1\TowerTalkgroupService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerTalkgroupService\obj\Debug\netstandard2.1\TowerTalkgroupService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupService\obj\Debug\netstandard2.1\TowerTalkgroupService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupService\obj\Debug\netstandard2.1\TowerTalkgroupService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupService\obj\Debug\netstandard2.1\TowerTalkgroupService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupService\obj\Debug\netstandard2.1\TowerTalkgroupService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupService\obj\Debug\netstandard2.1\TowerTalkgroupService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupService\obj\Debug\netstandard2.1\TowerTalkgroupService.sourcelink.json

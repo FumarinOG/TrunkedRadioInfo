@@ -23,3 +23,9 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\PatchService\obj\Debug\netstandard
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\PatchService\obj\Debug\netstandard2.1\PatchService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\PatchService\obj\Debug\netstandard2.1\PatchService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\PatchService\obj\Debug\netstandard2.1\PatchService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\PatchService\obj\Debug\netstandard2.1\PatchService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\PatchService\obj\Debug\netstandard2.1\PatchService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\PatchService\obj\Debug\netstandard2.1\PatchService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\PatchService\obj\Debug\netstandard2.1\PatchService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\PatchService\obj\Debug\netstandard2.1\PatchService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\PatchService\obj\Debug\netstandard2.1\PatchService.sourcelink.json

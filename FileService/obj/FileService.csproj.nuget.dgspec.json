@@ -1,52 +1,52 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj": {}
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "projectName": "DataAccessLibrary",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "frameworks": {
-          "net48": {
+          "net481": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net48": {}
+        "net481": {}
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
         "projectName": "DataLibrary",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
         "frameworks": {
-          "net48": {
+          "net481": {
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "net48": {}
+        "net481": {}
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj",
         "projectName": "FileService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\FileService\\obj\\",
         "projectStyle": "PackageReference",
@@ -65,59 +65,59 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj"
               }
             }
           }
@@ -134,7 +134,7 @@
           "dependencies": {
             "Microsoft.Graph": {
               "target": "Package",
-              "version": "[5.13.0, )"
+              "version": "[5.36.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -144,7 +144,7 @@
             },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.6, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -162,18 +162,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
         "projectName": "ObjectLibrary",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\obj\\",
+        "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -210,7 +210,7 @@
             },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.6, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -228,16 +228,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
         "projectName": "ProcessedFileService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\ProcessedFileService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ProcessedFileService\\obj\\",
         "projectStyle": "PackageReference",
@@ -256,11 +256,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -297,16 +297,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj",
         "projectName": "RadioHistoryService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\RadioHistoryService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioHistoryService\\obj\\",
         "projectStyle": "PackageReference",
@@ -325,11 +325,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -366,16 +366,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj",
         "projectName": "RadioService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioService\\RadioService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\RadioService\\obj\\",
         "projectStyle": "PackageReference",
@@ -394,11 +394,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -439,16 +439,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
         "projectName": "ServiceCommon",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\obj\\",
         "projectStyle": "PackageReference",
@@ -467,11 +467,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj"
               }
             }
           }
@@ -498,7 +498,7 @@
             },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.6, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -516,16 +516,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj",
         "projectName": "SystemInfoService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\SystemInfoService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SystemInfoService\\obj\\",
         "projectStyle": "PackageReference",
@@ -544,11 +544,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -585,16 +585,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj",
         "projectName": "TalkgroupHistoryService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\TalkgroupHistoryService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupHistoryService\\obj\\",
         "projectStyle": "PackageReference",
@@ -613,11 +613,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -654,16 +654,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj",
         "projectName": "TalkgroupRadioService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\obj\\",
         "projectStyle": "PackageReference",
@@ -682,11 +682,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -723,16 +723,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj",
         "projectName": "TalkgroupService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\TalkgroupService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupService\\obj\\",
         "projectStyle": "PackageReference",
@@ -751,11 +751,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -782,7 +782,7 @@
             },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.6, )"
             },
             "System.Runtime": {
               "target": "Package",
@@ -800,16 +800,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj",
         "projectName": "TowerFrequencyRadioService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\TowerFrequencyRadioService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyRadioService\\obj\\",
         "projectStyle": "PackageReference",
@@ -828,11 +828,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -869,16 +869,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj",
         "projectName": "TowerFrequencyService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\TowerFrequencyService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService\\obj\\",
         "projectStyle": "PackageReference",
@@ -897,14 +897,14 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
               }
             }
           }
@@ -941,16 +941,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj",
         "projectName": "TowerFrequencyTalkgroupService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\TowerFrequencyTalkgroupService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyTalkgroupService\\obj\\",
         "projectStyle": "PackageReference",
@@ -969,11 +969,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -1010,16 +1010,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj",
         "projectName": "TowerFrequencyUsageService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\TowerFrequencyUsageService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyUsageService\\obj\\",
         "projectStyle": "PackageReference",
@@ -1038,11 +1038,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -1079,16 +1079,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj",
         "projectName": "TowerNeighborService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\TowerNeighborService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerNeighborService\\obj\\",
         "projectStyle": "PackageReference",
@@ -1107,11 +1107,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -1148,16 +1148,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj",
         "projectName": "TowerRadioService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\obj\\",
         "projectStyle": "PackageReference",
@@ -1176,14 +1176,14 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
               }
             }
           }
@@ -1220,16 +1220,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj",
         "projectName": "TowerService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\obj\\",
         "projectStyle": "PackageReference",
@@ -1248,11 +1248,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -1289,16 +1289,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj",
         "projectName": "TowerTableService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\TowerTableService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTableService\\obj\\",
         "projectStyle": "PackageReference",
@@ -1317,11 +1317,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               }
             }
           }
@@ -1358,16 +1358,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj",
         "projectName": "TowerTalkgroupRadioService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\TowerTalkgroupRadioService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupRadioService\\obj\\",
         "projectStyle": "PackageReference",
@@ -1386,20 +1386,20 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TalkgroupRadioService\\TalkgroupRadioService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerRadioService\\TowerRadioService.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj"
               }
             }
           }
@@ -1436,16 +1436,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj": {
+    "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj",
+        "projectUniqueName": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj",
         "projectName": "TowerTalkgroupService",
-        "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj",
+        "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\TowerTalkgroupService.csproj",
         "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerTalkgroupService\\obj\\",
         "projectStyle": "PackageReference",
@@ -1464,11 +1464,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ServiceCommon\\ServiceCommon.csproj"
               },
-              "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
-                "projectPath": "C:\\Users\\mike\\Source\\Repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
+              "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj": {
+                "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerService\\TowerService.csproj"
               }
             }
           }
@@ -1505,7 +1505,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

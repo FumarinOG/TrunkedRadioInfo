@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = SystemDetailService
-build_property.ProjectDir = C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SystemDetailService\
+build_property.ProjectDir = C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemDetailService\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

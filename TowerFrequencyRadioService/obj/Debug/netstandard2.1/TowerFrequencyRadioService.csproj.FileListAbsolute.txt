@@ -23,3 +23,9 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyRadioService\obj\Deb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyRadioService\obj\Debug\netstandard2.1\TowerFrequencyRadioService.sourcelink.json

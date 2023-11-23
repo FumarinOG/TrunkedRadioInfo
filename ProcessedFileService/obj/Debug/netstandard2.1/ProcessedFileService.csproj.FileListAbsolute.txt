@@ -23,3 +23,9 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ProcessedFileService\obj\Debug\net
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.pdb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.1\ProcessedFileService.sourcelink.json
