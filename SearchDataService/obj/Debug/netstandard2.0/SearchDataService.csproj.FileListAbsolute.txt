@@ -23,12 +23,6 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SearchDataService\obj\Debug\netsta
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.CopyComplete
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.pdb
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.AssemblyReference.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.AssemblyInfoInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.AssemblyInfo.cs
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.CoreCompileInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\bin\Debug\netstandard2.0\NLog.config
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\bin\Debug\netstandard2.0\SearchDataService.deps.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\bin\Debug\netstandard2.0\SearchDataService.dll
@@ -45,6 +39,12 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\bin\Debug\n
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\bin\Debug\netstandard2.0\DataLibrary.dll.config
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\bin\Debug\netstandard2.0\ObjectLibrary.pdb
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\bin\Debug\netstandard2.0\EntityFramework.xml
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.pdb

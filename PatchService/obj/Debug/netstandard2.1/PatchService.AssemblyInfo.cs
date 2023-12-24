@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PatchService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10f66ade0ccfe67f9214e080f9ae47a597b5bd24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+603e66dd006d2780f99bc59ba4c2b445addd9282")]
 [assembly: System.Reflection.AssemblyProductAttribute("PatchService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PatchService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

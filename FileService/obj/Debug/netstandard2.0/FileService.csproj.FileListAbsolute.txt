@@ -57,12 +57,6 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\FileService\obj\Debug\netstandard2
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\FileService\obj\Debug\netstandard2.0\FileService.csproj.CopyComplete
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\FileService\obj\Debug\netstandard2.0\FileService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\FileService\obj\Debug\netstandard2.0\FileService.pdb
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.csproj.AssemblyReference.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.AssemblyInfoInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.AssemblyInfo.cs
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.csproj.CoreCompileInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\bin\Debug\netstandard2.0\NLog.config
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\bin\Debug\netstandard2.0\FileService.deps.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\bin\Debug\netstandard2.0\FileService.dll
@@ -113,6 +107,12 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\bin\Debug\netstan
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\bin\Debug\netstandard2.0\ObjectLibrary.pdb
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\bin\Debug\netstandard2.0\ServiceCommon.pdb
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\bin\Debug\netstandard2.0\EntityFramework.xml
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\FileService\obj\Debug\netstandard2.0\FileService.pdb

@@ -27,3 +27,16 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netst
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.1\ServiceCommon.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.1\ServiceCommon.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.1\ServiceCommon.sourcelink.json
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\DataAccessLibrary.dll
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\DataLibrary.dll
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\ObjectLibrary.dll
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\EntityFramework.dll
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\DataLibrary.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\DataLibrary.dll.config
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\ObjectLibrary.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\DataAccessLibrary.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\DataAccessLibrary.dll.config
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\bin\Debug\netstandard2.1\EntityFramework.xml
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.1\ServiceCommon.csproj.CopyComplete
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.1\ServiceCommon.dll
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.1\ServiceCommon.pdb

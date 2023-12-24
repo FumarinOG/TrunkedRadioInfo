@@ -10,13 +10,13 @@
         "projectName": "DataAccessLibrary",
         "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "frameworks": {
-          "net481": {
+          "net48": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net481": {}
+        "net48": {}
       }
     },
     "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DatabaseService\\DatabaseService.csproj": {
@@ -37,6 +37,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,6 +57,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -98,7 +104,7 @@
         "projectName": "DataLibrary",
         "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataLibrary\\DataLibrary.csproj",
         "frameworks": {
-          "net481": {
+          "net48": {
             "projectReferences": {
               "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
                 "projectPath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\DataAccessLibrary\\DataAccessLibrary.csproj"
@@ -111,7 +117,7 @@
         }
       },
       "frameworks": {
-        "net481": {}
+        "net48": {}
       }
     },
     "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\ObjectLibrary\\ObjectLibrary.csproj": {
@@ -132,6 +138,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -144,6 +151,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -198,6 +210,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -217,6 +230,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

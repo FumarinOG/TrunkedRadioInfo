@@ -23,12 +23,6 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerService\obj\Debug\netstandard
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerService\obj\Debug\netstandard2.0\TowerService.csproj.CopyComplete
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerService\obj\Debug\netstandard2.0\TowerService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerService\obj\Debug\netstandard2.0\TowerService.pdb
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.csproj.AssemblyReference.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.AssemblyInfoInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.AssemblyInfo.cs
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.csproj.CoreCompileInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\bin\Debug\netstandard2.0\NLog.config
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\bin\Debug\netstandard2.0\TowerService.deps.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\bin\Debug\netstandard2.0\TowerService.dll
@@ -45,6 +39,12 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\bin\Debug\netsta
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\bin\Debug\netstandard2.0\DataAccessLibrary.dll.config
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\bin\Debug\netstandard2.0\ObjectLibrary.pdb
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\bin\Debug\netstandard2.0\EntityFramework.xml
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerService\obj\Debug\netstandard2.0\TowerService.pdb

@@ -23,12 +23,6 @@ C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyUsageService\obj\Deb
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.csproj.CopyComplete
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.dll
 C:\Source\TrunkedRadioInfo\TrunkedRadioInfoV2\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.pdb
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.csproj.AssemblyReference.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.AssemblyInfoInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.AssemblyInfo.cs
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.csproj.CoreCompileInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\bin\Debug\netstandard2.0\NLog.config
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\bin\Debug\netstandard2.0\TowerFrequencyUsageService.deps.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\bin\Debug\netstandard2.0\TowerFrequencyUsageService.dll
@@ -45,6 +39,12 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\bi
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\bin\Debug\netstandard2.0\DataAccessLibrary.dll.config
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\bin\Debug\netstandard2.0\ObjectLibrary.pdb
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\bin\Debug\netstandard2.0\EntityFramework.xml
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.csproj.AssemblyReference.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.AssemblyInfoInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.AssemblyInfo.cs
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.csproj.CoreCompileInputs.cache
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.sourcelink.json
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyUsageService\obj\Debug\netstandard2.0\TowerFrequencyUsageService.pdb
