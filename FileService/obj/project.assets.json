@@ -70,10 +70,10 @@
           }
         }
       },
-      "Microsoft.Graph/5.36.0": {
+      "Microsoft.Graph/5.37.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Graph.Core": "3.1.2"
+          "Microsoft.Graph.Core": "3.1.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Graph.dll": {
@@ -86,13 +86,13 @@
           }
         }
       },
-      "Microsoft.Graph.Core/3.1.2": {
+      "Microsoft.Graph.Core/3.1.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.0.3",
           "Microsoft.Kiota.Abstractions": "1.7.2",
           "Microsoft.Kiota.Authentication.Azure": "1.1.2",
-          "Microsoft.Kiota.Http.HttpClientLibrary": "1.3.2",
+          "Microsoft.Kiota.Http.HttpClientLibrary": "1.3.3",
           "Microsoft.Kiota.Serialization.Form": "1.1.1",
           "Microsoft.Kiota.Serialization.Json": "1.1.2",
           "Microsoft.Kiota.Serialization.Multipart": "1.1.1",
@@ -248,7 +248,7 @@
           }
         }
       },
-      "Microsoft.Kiota.Http.HttpClientLibrary/1.3.2": {
+      "Microsoft.Kiota.Http.HttpClientLibrary/1.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Kiota.Abstractions": "1.7.2",
@@ -1219,10 +1219,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.Graph/5.36.0": {
-      "sha512": "EN05EORfdRdvgC3Kyk+2fya438HypWeAP4JZi1JXr9qto0sp1ejoXA597plF3wUzaRDHlT8fW6s87oZTfdfyDw==",
+    "Microsoft.Graph/5.37.0": {
+      "sha512": "41OIqTbUoSa4ehVfnUDz/+TM46tA6Du8xRm4kv6qhr6hcly+J3Vwe7VGMepbm9Fan14LCaJHz6GsmoiFdD9kHQ==",
       "type": "package",
-      "path": "microsoft.graph/5.36.0",
+      "path": "microsoft.graph/5.37.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1234,14 +1234,14 @@
         "lib/netstandard2.0/Microsoft.Graph.xml",
         "lib/netstandard2.1/Microsoft.Graph.dll",
         "lib/netstandard2.1/Microsoft.Graph.xml",
-        "microsoft.graph.5.36.0.nupkg.sha512",
+        "microsoft.graph.5.37.0.nupkg.sha512",
         "microsoft.graph.nuspec"
       ]
     },
-    "Microsoft.Graph.Core/3.1.2": {
-      "sha512": "r+8fbhwGbfelqS3ZbFkESC+B6Lwn21gv88oXtUtRLkwFkJRmtFiCZVyuom7JaHn3cP7AUw5QNyWP6PaoqsoKEQ==",
+    "Microsoft.Graph.Core/3.1.3": {
+      "sha512": "sysGvd+1vggJKIc5kfiDuwpMlJJaTwIK+uYA2MEo3PJp3asP8G2U+W0NFQvxANLUDipLTd2zofCbfRCVUjA4Ag==",
       "type": "package",
-      "path": "microsoft.graph.core/3.1.2",
+      "path": "microsoft.graph.core/3.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1263,7 +1263,7 @@
         "lib/net6.0/Microsoft.Graph.Core.xml",
         "lib/netstandard2.0/Microsoft.Graph.Core.dll",
         "lib/netstandard2.0/Microsoft.Graph.Core.xml",
-        "microsoft.graph.core.3.1.2.nupkg.sha512",
+        "microsoft.graph.core.3.1.3.nupkg.sha512",
         "microsoft.graph.core.nuspec"
       ]
     },
@@ -1443,10 +1443,10 @@
         "microsoft.kiota.authentication.azure.nuspec"
       ]
     },
-    "Microsoft.Kiota.Http.HttpClientLibrary/1.3.2": {
-      "sha512": "ifCWjA6gFp7/77jqN38ZhyPTKNuh7kOsoS1+EjttTOsTufz54L42bJ7GK+jd0Gk4zuYjDncVBXtNSZWGbwtzgQ==",
+    "Microsoft.Kiota.Http.HttpClientLibrary/1.3.3": {
+      "sha512": "X+rkl///PgQawQyQGNtZHoY2rhcOc6BngOwK75098HUViJr1IuLc06k5Rq2eRPN0rdngWWyHwM5wC/96V04geQ==",
       "type": "package",
-      "path": "microsoft.kiota.http.httpclientlibrary/1.3.2",
+      "path": "microsoft.kiota.http.httpclientlibrary/1.3.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1458,7 +1458,7 @@
         "lib/netstandard2.0/Microsoft.Kiota.Http.HttpClientLibrary.xml",
         "lib/netstandard2.1/Microsoft.Kiota.Http.HttpClientLibrary.dll",
         "lib/netstandard2.1/Microsoft.Kiota.Http.HttpClientLibrary.xml",
-        "microsoft.kiota.http.httpclientlibrary.1.3.2.nupkg.sha512",
+        "microsoft.kiota.http.httpclientlibrary.1.3.3.nupkg.sha512",
         "microsoft.kiota.http.httpclientlibrary.nuspec"
       ]
     },
@@ -3148,7 +3148,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "DataLibrary >= 1.0.0",
-      "Microsoft.Graph >= 5.36.0",
+      "Microsoft.Graph >= 5.37.0",
       "NETStandard.Library >= 2.0.3",
       "NLog >= 5.2.6",
       "ProcessedFileService >= 1.0.0",
@@ -3192,7 +3192,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+        "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3273,7 +3273,7 @@
         "dependencies": {
           "Microsoft.Graph": {
             "target": "Package",
-            "version": "[5.36.0, )"
+            "version": "[5.37.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

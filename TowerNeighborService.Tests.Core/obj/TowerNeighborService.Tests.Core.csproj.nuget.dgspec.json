@@ -59,7 +59,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -131,7 +131,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -214,7 +214,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -256,13 +256,13 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.6.2, )"
+              "version": "[2.6.4, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.5.4, )"
+              "version": "[2.5.6, )"
             }
           },
           "imports": [
@@ -303,7 +303,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qel37eRqEM03flvpGeOl8JSx2gbr2tsAEQ86TazriUecP23NqwUIN7XWhnwWMB7P5hhYFnYqVqCLs+LzUvRJMw==",
+  "dgSpecHash": "sLWbSUbNRn/VJN5gxzFoLeEJD0PVHu82KT/2Jac7//t2D1/w8DTv0DKMbnIzaBOPZ+evMMIIwDzeZRBrh+lo3A==",
   "success": true,
   "projectFilePath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\FileService\\FileService.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,8 @@
     "C:\\Users\\mike\\.nuget\\packages\\azure.core\\1.36.0\\azure.core.1.36.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\microsoft.graph\\5.36.0\\microsoft.graph.5.36.0.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\microsoft.graph.core\\3.1.2\\microsoft.graph.core.3.1.2.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\microsoft.graph\\5.37.0\\microsoft.graph.5.37.0.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\microsoft.graph.core\\3.1.3\\microsoft.graph.core.3.1.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.3\\microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.3\\microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.3\\microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
@@ -18,7 +18,7 @@
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.kiota.abstractions\\1.7.2\\microsoft.kiota.abstractions.1.7.2.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.kiota.authentication.azure\\1.1.2\\microsoft.kiota.authentication.azure.1.1.2.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\microsoft.kiota.http.httpclientlibrary\\1.3.2\\microsoft.kiota.http.httpclientlibrary.1.3.2.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\microsoft.kiota.http.httpclientlibrary\\1.3.3\\microsoft.kiota.http.httpclientlibrary.1.3.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.kiota.serialization.form\\1.1.1\\microsoft.kiota.serialization.form.1.1.1.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.kiota.serialization.json\\1.1.2\\microsoft.kiota.serialization.json.1.1.2.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.kiota.serialization.multipart\\1.1.1\\microsoft.kiota.serialization.multipart.1.1.1.nupkg.sha512",

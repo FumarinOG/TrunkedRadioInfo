@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JpoC+C2+qmxb0cHIgQeWFqgpX3mkb2FNq9GC1XOlQrS3Zvz3XxOrYm1lhVRwXATuo3Io+ZVjtg/NWIdmCkC6nA==",
+  "dgSpecHash": "MbHC/pjDzgaYTlxm0c47O+WSAAVgLVs+g3auHsB6QuNjqOcwb9bGzNRnaSdt94rcWHWVsnENMhmWxkkk7CkLGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\TowerFrequencyService.Tests.Core\\TowerFrequencyService.Tests.Core.csproj",
   "expectedPackageFiles": [
@@ -87,21 +87,21 @@
     "C:\\Users\\mike\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\xunit\\2.6.2\\xunit.2.6.2.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\xunit\\2.6.4\\xunit.2.6.4.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\xunit.analyzers\\1.6.0\\xunit.analyzers.1.6.0.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\xunit.assert\\2.6.2\\xunit.assert.2.6.2.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\xunit.core\\2.6.2\\xunit.core.2.6.2.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\xunit.extensibility.core\\2.6.2\\xunit.extensibility.core.2.6.2.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\xunit.extensibility.execution\\2.6.2\\xunit.extensibility.execution.2.6.2.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.4\\xunit.runner.visualstudio.2.5.4.nupkg.sha512"
+    "C:\\Users\\mike\\.nuget\\packages\\xunit.analyzers\\1.8.0\\xunit.analyzers.1.8.0.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\xunit.assert\\2.6.4\\xunit.assert.2.6.4.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\xunit.core\\2.6.4\\xunit.core.2.6.4.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\xunit.extensibility.core\\2.6.4\\xunit.extensibility.core.2.6.4.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\xunit.extensibility.execution\\2.6.4\\xunit.extensibility.execution.2.6.4.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.6\\xunit.runner.visualstudio.2.5.6.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'xunit.runner.visualstudio 2.5.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'xunit.runner.visualstudio 2.5.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "xunit.runner.visualstudio",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

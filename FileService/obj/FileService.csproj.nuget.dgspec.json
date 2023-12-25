@@ -59,7 +59,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -140,7 +140,7 @@
           "dependencies": {
             "Microsoft.Graph": {
               "target": "Package",
-              "version": "[5.36.0, )"
+              "version": "[5.37.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -190,7 +190,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -262,7 +262,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -337,7 +337,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -412,7 +412,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -491,7 +491,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -574,7 +574,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -649,7 +649,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -724,7 +724,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -799,7 +799,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -882,7 +882,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -957,7 +957,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1035,7 +1035,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1110,7 +1110,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1185,7 +1185,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1260,7 +1260,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1338,7 +1338,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1413,7 +1413,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1488,7 +1488,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1572,7 +1572,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail\\": {},
+          "C:\\Users\\mike\\Downloads\\Telerik Collection NuGet Package R2 2023 SP2 Retail": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
