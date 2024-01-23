@@ -49,6 +49,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Deb
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Debug\netstandard2.0\TowerFrequencyService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Debug\netstandard2.0\TowerFrequencyService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Debug\netstandard2.0\TowerFrequencyService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Debug\netstandard2.0\TowerFrequencyService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Debug\netstandard2.0\TowerFrequencyService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Debug\netstandard2.0\TowerFrequencyService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyService\obj\Debug\netstandard2.0\TowerFre.F558FA7B.Up2Date

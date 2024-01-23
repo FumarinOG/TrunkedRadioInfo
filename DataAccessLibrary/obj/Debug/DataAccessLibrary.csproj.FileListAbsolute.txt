@@ -23,6 +23,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\bin\Debug\E
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\bin\Debug\NLog.xml
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\obj\Debug\DataAccessLibrary.csproj.AssemblyReference.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\obj\Debug\DataAccessLibrary.csproj.CoreCompileInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\obj\Debug\DataAccessLibrary.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\obj\Debug\DataAccessLibrary.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\obj\Debug\DataAccessLibrary.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataAccessLibrary\obj\Debug\DataAcce.446B2A58.Up2Date

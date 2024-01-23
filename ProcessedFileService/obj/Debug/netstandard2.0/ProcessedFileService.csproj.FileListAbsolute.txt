@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debu
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.0\ProcessedFileService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.0\ProcessedFileService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.0\ProcessedFileService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.0\ProcessedFileService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.0\ProcessedFileService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.0\ProcessedFileService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ProcessedFileService\obj\Debug\netstandard2.0\Processe.BB4573C6.Up2Date

@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug\netstandard2.0\RadioHistoryService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug\netstandard2.0\RadioHistoryService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug\netstandard2.0\RadioHistoryService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug\netstandard2.0\RadioHistoryService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug\netstandard2.0\RadioHistoryService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug\netstandard2.0\RadioHistoryService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioHistoryService\obj\Debug\netstandard2.0\RadioHis.9111FF02.Up2Date

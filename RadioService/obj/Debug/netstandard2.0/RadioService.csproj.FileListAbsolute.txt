@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netsta
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netstandard2.0\RadioService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netstandard2.0\RadioService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netstandard2.0\RadioService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netstandard2.0\RadioService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netstandard2.0\RadioService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netstandard2.0\RadioService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\RadioService\obj\Debug\netstandard2.0\RadioSer.00559CCD.Up2Date

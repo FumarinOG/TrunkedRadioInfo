@@ -226,16 +226,6 @@
             <param name="httpRequestMessage">The <see cref="T:System.Net.Http.HttpRequestMessage"/> object</param>
             <returns></returns>
         </member>
-        <member name="M:Microsoft.Graph.HttpRequestMessageExtensions.CloneAsync(System.Net.Http.HttpRequestMessage)">
-            <summary>
-            Create a new HTTP request by copying previous HTTP request's headers and properties from response's request message.
-            </summary>
-            <param name="originalRequest">The previous <see cref="T:System.Net.Http.HttpRequestMessage"/> needs to be copy.</param>
-            <returns>The <see cref="T:System.Net.Http.HttpRequestMessage"/>.</returns>
-            <remarks>
-            Re-issue a new HTTP request with the previous request's headers and properities
-            </remarks>
-        </member>
         <member name="M:Microsoft.Graph.HttpRequestMessageExtensions.GetRequestContext(System.Net.Http.HttpRequestMessage)">
             <summary>
             Gets a <see cref="T:Microsoft.Graph.GraphRequestContext"/> from <see cref="T:System.Net.Http.HttpRequestMessage"/>
@@ -683,10 +673,11 @@
             <param name="errorMappings">The error mappings to use for handling error responses</param>
             <returns></returns>
         </member>
-        <member name="M:Microsoft.Graph.Core.Requests.BatchRequestBuilder.ToPostRequestInformationAsync(Microsoft.Graph.BatchRequestContent)">
+        <member name="M:Microsoft.Graph.Core.Requests.BatchRequestBuilder.ToPostRequestInformationAsync(Microsoft.Graph.BatchRequestContent,System.Threading.CancellationToken)">
             <summary>
             Create <see cref="T:Microsoft.Kiota.Abstractions.RequestInformation"/> instance to post to batch endpoint
             <param name="batchRequestContent">The <see cref="T:Microsoft.Graph.BatchRequestContent"/> for the request</param>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/> to use for cancelling requests</param>
             </summary>
         </member>
         <member name="T:Microsoft.Graph.AsyncMonitor`1">
@@ -797,11 +788,12 @@
             <param name="responseStatusCodes">A dictionary with response codes, get with batchResponseContent.GetResponsesStatusCodesAsync()</param>
             <returns>new <see cref="T:Microsoft.Graph.BatchRequestContent"/> with all failed requests.</returns>
         </member>
-        <member name="M:Microsoft.Graph.BatchRequestContent.GetBatchRequestContentAsync">
+        <member name="M:Microsoft.Graph.BatchRequestContent.GetBatchRequestContentAsync(System.Threading.CancellationToken)">
             <summary>
             Get the content of the batchRequest in the form of a stream.
             It is the responsibility of the caller to dispose of the stream returned.
             </summary>
+            <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken"/> to use for cancelling requests</param>
             <returns>A stream object with the contents of the batch request</returns>
         </member>
         <member name="M:Microsoft.Graph.BatchRequestContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)">

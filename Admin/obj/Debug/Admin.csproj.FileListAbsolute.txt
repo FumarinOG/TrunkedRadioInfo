@@ -320,6 +320,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.UploadF
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.csproj.GenerateResource.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.exe.licenses
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.csproj.CoreCompileInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.exe
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\Admin\obj\Debug\Admin.csproj.Up2Date

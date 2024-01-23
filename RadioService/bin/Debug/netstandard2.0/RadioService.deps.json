@@ -46,11 +46,11 @@
           "Microsoft.NETCore.Platforms": "1.1.1"
         }
       },
-      "NLog/5.2.6": {
+      "NLog/5.2.8": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.2.6.2256"
+            "fileVersion": "5.2.8.2366"
           }
         }
       },
@@ -95,7 +95,7 @@
       },
       "ObjectLibrary/1.0.0": {
         "dependencies": {
-          "NLog": "5.2.6",
+          "NLog": "5.2.8",
           "System.Runtime": "4.3.1"
         },
         "runtime": {
@@ -106,7 +106,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "DataLibrary": "1.0.0",
-          "NLog": "5.2.6",
+          "NLog": "5.2.8",
           "ObjectLibrary": "1.0.0",
           "System.Runtime": "4.3.1"
         },
@@ -165,12 +165,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "NLog/5.2.6": {
+    "NLog/5.2.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7/RQ4VBu6HT6kieczhwfI52ugcxrsrMNWIGy43Q36SdfN5dApZW7otsgXuIXx2rKspIGkPhD99JVWIs6FtIilA==",
-      "path": "nlog/5.2.6",
-      "hashPath": "nlog.5.2.6.nupkg.sha512"
+      "sha512": "sha512-jAIELkWBs1CXFPp986KSGpDFQZHCFccO+LMbKBTTNm42KifaI1mYzFMFQQfuGmGMTrCx0TFPhDjHDE4cLAZWiQ==",
+      "path": "nlog/5.2.8",
+      "hashPath": "nlog.5.2.8.nupkg.sha512"
     },
     "System.Reflection.Emit/4.7.0": {
       "type": "package",

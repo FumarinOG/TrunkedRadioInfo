@@ -43,6 +43,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\bin\Debug\NLog.xm
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\bin\Debug\System.Data.SqlClient.xml
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\obj\Debug\DataLibrary.csproj.AssemblyReference.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\obj\Debug\DataLibrary.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\obj\Debug\DataLibrary.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\DataLibrary\obj\Debug\DataLibr.6887D3A1.Up2Date

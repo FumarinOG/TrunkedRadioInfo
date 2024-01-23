@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupServic
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.0\TowerFrequencyTalkgroupService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.0\TowerFrequencyTalkgroupService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.0\TowerFrequencyTalkgroupService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.0\TowerFrequencyTalkgroupService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.0\TowerFrequencyTalkgroupService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.0\TowerFrequencyTalkgroupService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerFrequencyTalkgroupService\obj\Debug\netstandard2.0\TowerFre.EE98DF9B.Up2Date

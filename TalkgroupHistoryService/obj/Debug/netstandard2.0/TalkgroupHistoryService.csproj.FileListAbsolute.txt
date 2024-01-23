@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\D
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\Debug\netstandard2.0\TalkgroupHistoryService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\Debug\netstandard2.0\TalkgroupHistoryService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\Debug\netstandard2.0\TalkgroupHistoryService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\Debug\netstandard2.0\TalkgroupHistoryService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\Debug\netstandard2.0\TalkgroupHistoryService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\Debug\netstandard2.0\TalkgroupHistoryService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TalkgroupHistoryService\obj\Debug\netstandard2.0\Talkgrou.974EA95E.Up2Date

@@ -59,7 +59,7 @@ namespace Admin
 
                 if (recordTotal == 0)
                 {
-                    ProgressBar.Maximum = 250000;
+                    ProgressBar.Maximum = 500000;
                 }
                 else
                 {

@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debu
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debug\netstandard2.0\TowerNeighborService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debug\netstandard2.0\TowerNeighborService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debug\netstandard2.0\TowerNeighborService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debug\netstandard2.0\TowerNeighborService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debug\netstandard2.0\TowerNeighborService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debug\netstandard2.0\TowerNeighborService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerNeighborService\obj\Debug\netstandard2.0\TowerNei.26F7F5BB.Up2Date

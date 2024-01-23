@@ -49,6 +49,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\n
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\netstandard2.0\TowerRadioService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\netstandard2.0\TowerRadioService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\netstandard2.0\TowerRadioService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\netstandard2.0\TowerRadioService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\netstandard2.0\TowerRadioService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\netstandard2.0\TowerRadioService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerRadioService\obj\Debug\netstandard2.0\TowerRad.657D930E.Up2Date

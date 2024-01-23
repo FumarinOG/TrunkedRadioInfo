@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\n
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\netstandard2.0\TowerTableService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\netstandard2.0\TowerTableService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\netstandard2.0\TowerTableService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\netstandard2.0\TowerTableService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\netstandard2.0\TowerTableService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\netstandard2.0\TowerTableService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTableService\obj\Debug\netstandard2.0\TowerTab.DC526CFE.Up2Date

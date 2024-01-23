@@ -65,7 +65,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "NLog/5.2.6": {
+      "NLog/5.2.8": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/NLog.dll": {
@@ -145,7 +145,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "NLog": "5.2.6",
+          "NLog": "5.2.8",
           "System.Runtime": "4.3.1"
         },
         "compile": {
@@ -161,7 +161,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "DataLibrary": "1.0.0",
-          "NLog": "5.2.6",
+          "NLog": "5.2.8",
           "ObjectLibrary": "1.0.0",
           "System.Runtime": "4.3.1"
         },
@@ -434,10 +434,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "NLog/5.2.6": {
-      "sha512": "7/RQ4VBu6HT6kieczhwfI52ugcxrsrMNWIGy43Q36SdfN5dApZW7otsgXuIXx2rKspIGkPhD99JVWIs6FtIilA==",
+    "NLog/5.2.8": {
+      "sha512": "jAIELkWBs1CXFPp986KSGpDFQZHCFccO+LMbKBTTNm42KifaI1mYzFMFQQfuGmGMTrCx0TFPhDjHDE4cLAZWiQ==",
       "type": "package",
-      "path": "nlog/5.2.6",
+      "path": "nlog/5.2.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -454,7 +454,7 @@
         "lib/netstandard1.5/NLog.xml",
         "lib/netstandard2.0/NLog.dll",
         "lib/netstandard2.0/NLog.xml",
-        "nlog.5.2.6.nupkg.sha512",
+        "nlog.5.2.8.nupkg.sha512",
         "nlog.nuspec"
       ]
     },
@@ -770,7 +770,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200-preview.23624.5\\RuntimeIdentifierGraph.json"
       }
     }
   }

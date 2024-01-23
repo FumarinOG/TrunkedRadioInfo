@@ -41,6 +41,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netst
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceCommon.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\ServiceCommon\obj\Debug\netstandard2.0\ServiceC.619531E4.Up2Date

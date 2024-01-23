@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\n
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDataService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SearchDataService\obj\Debug\netstandard2.0\SearchDa.F99C9F19.Up2Date

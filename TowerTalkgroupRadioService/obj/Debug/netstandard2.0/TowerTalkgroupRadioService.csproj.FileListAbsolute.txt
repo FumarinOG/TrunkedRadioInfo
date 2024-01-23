@@ -61,6 +61,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\ob
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\obj\Debug\netstandard2.0\TowerTalkgroupRadioService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\obj\Debug\netstandard2.0\TowerTalkgroupRadioService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\obj\Debug\netstandard2.0\TowerTalkgroupRadioService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\obj\Debug\netstandard2.0\TowerTalkgroupRadioService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\obj\Debug\netstandard2.0\TowerTalkgroupRadioService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\obj\Debug\netstandard2.0\TowerTalkgroupRadioService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\TowerTalkgroupRadioService\obj\Debug\netstandard2.0\TowerTal.020C5EB3.Up2Date

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RadioHistoryService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8645b1c8cb1f8d49268a7686d86e0da6f0491e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RadioHistoryService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RadioHistoryService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

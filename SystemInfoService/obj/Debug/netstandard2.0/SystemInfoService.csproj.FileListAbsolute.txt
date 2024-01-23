@@ -45,6 +45,6 @@ C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\n
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\netstandard2.0\SystemInfoService.AssemblyInfo.cs
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\netstandard2.0\SystemInfoService.csproj.CoreCompileInputs.cache
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\netstandard2.0\SystemInfoService.sourcelink.json
-C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\netstandard2.0\SystemInfoService.csproj.CopyComplete
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\netstandard2.0\SystemInfoService.dll
 C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\netstandard2.0\SystemInfoService.pdb
+C:\Users\mike\source\repos\GitHub\TrunkedRadioInfo\SystemInfoService\obj\Debug\netstandard2.0\SystemIn.254DF308.Up2Date

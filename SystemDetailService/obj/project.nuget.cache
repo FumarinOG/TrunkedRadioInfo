@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0axB1MpjbjiLUiWaJuQ/DdE93sm9FgK1p8U32D7uAbJPPZggF0vNZSilTNeMkEeT9yze17ospRP+tsEFbxF0Ag==",
+  "dgSpecHash": "VhS2CUUz1W/sd1qxXP8P4AuT2pj8YGWuCWk2mjttJonnSKc04W3mu8GRMId7Z9Qf2Hq3BZ2RQ97krRcfZj18eA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mike\\source\\repos\\GitHub\\TrunkedRadioInfo\\SystemDetailService\\SystemDetailService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.6\\nlog.5.2.6.nupkg.sha512",
+    "C:\\Users\\mike\\.nuget\\packages\\nlog\\5.2.8\\nlog.5.2.8.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"
   ],
   "logs": []
