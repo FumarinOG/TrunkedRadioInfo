@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TalkgroupRadioService.Tests.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8645b1c8cb1f8d49268a7686d86e0da6f0491e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b8c1059da1cf904024c31e7cf9115dce995f914")]
 [assembly: System.Reflection.AssemblyProductAttribute("TalkgroupRadioService.Tests.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TalkgroupRadioService.Tests.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
